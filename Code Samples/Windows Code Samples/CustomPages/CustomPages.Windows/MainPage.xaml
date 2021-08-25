@@ -1,0 +1,18 @@
+﻿<Page
+    x:Class="CustomPages.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CustomPages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock HorizontalAlignment="Left" Margin="107,70,0,0" TextWrapping="Wrap" Text="MICROSOFT BAND SDK - CUSTOM PAGES SAMPLE APP" VerticalAlignment="Top" FontSize="20"/>
+        <Button Content="Run" HorizontalAlignment="Left" Margin="107,107,0,0" VerticalAlignment="Top" Click="Button_Click" FontSize="20"/>
+        <ScrollViewer Margin="110,175,110,110" VerticalScrollBarVisibility="Auto">
+            <TextBlock TextWrapping="Wrap" Text="{Binding StatusMessage}" FontSize="20"/>
+        </ScrollViewer>
+
+    </Grid>
+</Page>

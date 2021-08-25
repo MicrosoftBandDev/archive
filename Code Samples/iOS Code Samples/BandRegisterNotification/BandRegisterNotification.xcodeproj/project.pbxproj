@@ -1,0 +1,338 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DCECB82F1ABA264000A4909C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCECB82E1ABA264000A4909C /* main.m */; };
+		DCECB8321ABA264000A4909C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCECB8311ABA264000A4909C /* AppDelegate.m */; };
+		DCECB8351ABA264000A4909C /* RegisterNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DCECB8341ABA264000A4909C /* RegisterNotificationViewController.m */; };
+		DCECB8381ABA264000A4909C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCECB8361ABA264000A4909C /* Main.storyboard */; };
+		DCECB83A1ABA264000A4909C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCECB8391ABA264000A4909C /* Images.xcassets */; };
+		DCECB83D1ABA264000A4909C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCECB83B1ABA264000A4909C /* LaunchScreen.xib */; };
+		DCECB8581ABA26CA00A4909C /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCECB8531ABA269D00A4909C /* CoreBluetooth.framework */; };
+		DCECB85D1ABA2E2600A4909C /* C.png in Resources */ = {isa = PBXBuildFile; fileRef = DCECB8591ABA280800A4909C /* C.png */; };
+		DCECB85E1ABA2E2A00A4909C /* Cc.png in Resources */ = {isa = PBXBuildFile; fileRef = DCECB85A1ABA280800A4909C /* Cc.png */; };
+		E5859BF01AC62721007464FA /* MicrosoftBandKit_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCECB8551ABA26B200A4909C /* MicrosoftBandKit_iOS.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DCECB8291ABA264000A4909C /* BandRegisterNotification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BandRegisterNotification.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCECB82D1ABA264000A4909C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCECB82E1ABA264000A4909C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DCECB8301ABA264000A4909C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DCECB8311ABA264000A4909C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DCECB8331ABA264000A4909C /* RegisterNotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterNotificationViewController.h; sourceTree = "<group>"; };
+		DCECB8341ABA264000A4909C /* RegisterNotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterNotificationViewController.m; sourceTree = "<group>"; };
+		DCECB8371ABA264000A4909C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DCECB8391ABA264000A4909C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DCECB83C1ABA264000A4909C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		DCECB8531ABA269D00A4909C /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		DCECB8551ABA26B200A4909C /* MicrosoftBandKit_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MicrosoftBandKit_iOS.framework; path = ../MicrosoftBandKit_iOS.framework; sourceTree = "<group>"; };
+		DCECB8591ABA280800A4909C /* C.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = C.png; sourceTree = "<group>"; };
+		DCECB85A1ABA280800A4909C /* Cc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cc.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCECB8261ABA264000A4909C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCECB8581ABA26CA00A4909C /* CoreBluetooth.framework in Frameworks */,
+				E5859BF01AC62721007464FA /* MicrosoftBandKit_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DCECB8201ABA264000A4909C = {
+			isa = PBXGroup;
+			children = (
+				DCECB8521ABA268000A4909C /* Framework */,
+				DCECB82B1ABA264000A4909C /* BandRegisterNotification */,
+				DCECB82A1ABA264000A4909C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DCECB82A1ABA264000A4909C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCECB8291ABA264000A4909C /* BandRegisterNotification.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCECB82B1ABA264000A4909C /* BandRegisterNotification */ = {
+			isa = PBXGroup;
+			children = (
+				DCECB8301ABA264000A4909C /* AppDelegate.h */,
+				DCECB8311ABA264000A4909C /* AppDelegate.m */,
+				DCECB8331ABA264000A4909C /* RegisterNotificationViewController.h */,
+				DCECB8341ABA264000A4909C /* RegisterNotificationViewController.m */,
+				DCECB8361ABA264000A4909C /* Main.storyboard */,
+				DCECB8391ABA264000A4909C /* Images.xcassets */,
+				DCECB83B1ABA264000A4909C /* LaunchScreen.xib */,
+				DCECB8591ABA280800A4909C /* C.png */,
+				DCECB85A1ABA280800A4909C /* Cc.png */,
+				DCECB82C1ABA264000A4909C /* Supporting Files */,
+			);
+			path = BandRegisterNotification;
+			sourceTree = "<group>";
+		};
+		DCECB82C1ABA264000A4909C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DCECB82D1ABA264000A4909C /* Info.plist */,
+				DCECB82E1ABA264000A4909C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DCECB8521ABA268000A4909C /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				DCECB8551ABA26B200A4909C /* MicrosoftBandKit_iOS.framework */,
+				DCECB8531ABA269D00A4909C /* CoreBluetooth.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DCECB8281ABA264000A4909C /* BandRegisterNotification */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCECB84C1ABA264000A4909C /* Build configuration list for PBXNativeTarget "BandRegisterNotification" */;
+			buildPhases = (
+				DCECB8251ABA264000A4909C /* Sources */,
+				DCECB8261ABA264000A4909C /* Frameworks */,
+				DCECB8271ABA264000A4909C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BandRegisterNotification;
+			productName = BandANCSRegister;
+			productReference = DCECB8291ABA264000A4909C /* BandRegisterNotification.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCECB8211ABA264000A4909C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = Microsoft;
+				TargetAttributes = {
+					DCECB8281ABA264000A4909C = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = DCECB8241ABA264000A4909C /* Build configuration list for PBXProject "BandRegisterNotification" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DCECB8201ABA264000A4909C;
+			productRefGroup = DCECB82A1ABA264000A4909C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCECB8281ABA264000A4909C /* BandRegisterNotification */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCECB8271ABA264000A4909C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCECB85E1ABA2E2A00A4909C /* Cc.png in Resources */,
+				DCECB8381ABA264000A4909C /* Main.storyboard in Resources */,
+				DCECB83D1ABA264000A4909C /* LaunchScreen.xib in Resources */,
+				DCECB83A1ABA264000A4909C /* Images.xcassets in Resources */,
+				DCECB85D1ABA2E2600A4909C /* C.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCECB8251ABA264000A4909C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCECB8351ABA264000A4909C /* RegisterNotificationViewController.m in Sources */,
+				DCECB8321ABA264000A4909C /* AppDelegate.m in Sources */,
+				DCECB82F1ABA264000A4909C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DCECB8361ABA264000A4909C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCECB8371ABA264000A4909C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DCECB83B1ABA264000A4909C /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCECB83C1ABA264000A4909C /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DCECB84A1ABA264000A4909C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DCECB84B1ABA264000A4909C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DCECB84D1ABA264000A4909C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"${SRCROOT}/../",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/BandRegisterNotification/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DCECB84E1ABA264000A4909C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"${SRCROOT}/../",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/BandRegisterNotification/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCECB8241ABA264000A4909C /* Build configuration list for PBXProject "BandRegisterNotification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCECB84A1ABA264000A4909C /* Debug */,
+				DCECB84B1ABA264000A4909C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCECB84C1ABA264000A4909C /* Build configuration list for PBXNativeTarget "BandRegisterNotification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCECB84D1ABA264000A4909C /* Debug */,
+				DCECB84E1ABA264000A4909C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DCECB8211ABA264000A4909C /* Project object */;
+}

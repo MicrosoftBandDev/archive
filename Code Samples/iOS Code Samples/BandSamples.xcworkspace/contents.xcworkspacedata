@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:BandCustomPages/BandCustomPages.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:BandNotification/BandNotification.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:BandPersonalization/BandPersonalization.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:BandSensor/BandSensor.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:BandRegisterNotification/BandRegisterNotification.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:BandTileEvent/BandTileEvent.xcodeproj">
+   </FileRef>
+</Workspace>

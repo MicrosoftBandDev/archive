@@ -1,0 +1,342 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC0616E01A9FF39A00A012EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0616DF1A9FF39A00A012EB /* main.m */; };
+		DC0616E31A9FF39A00A012EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0616E21A9FF39A00A012EB /* AppDelegate.m */; };
+		DC0616E61A9FF39A00A012EB /* CustomPagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0616E51A9FF39A00A012EB /* CustomPagesViewController.m */; };
+		DC0616E91A9FF39A00A012EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC0616E71A9FF39A00A012EB /* Main.storyboard */; };
+		DC0616EB1A9FF39A00A012EB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC0616EA1A9FF39A00A012EB /* Images.xcassets */; };
+		DC0616EE1A9FF39A00A012EB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC0616EC1A9FF39A00A012EB /* LaunchScreen.xib */; };
+		DC0617381A9FF4BE00A012EB /* MicrosoftBandKit_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC0617351A9FF48800A012EB /* MicrosoftBandKit_iOS.framework */; };
+		DC06173F1A9FFC8300A012EB /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC06173D1A9FFC7D00A012EB /* CoreBluetooth.framework */; };
+		DC0617811AA1009500A012EB /* A.png in Resources */ = {isa = PBXBuildFile; fileRef = DC0617801AA1009500A012EB /* A.png */; };
+		DC0617831AA1141200A012EB /* Aa.png in Resources */ = {isa = PBXBuildFile; fileRef = DC0617821AA1141200A012EB /* Aa.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DC0616DA1A9FF39A00A012EB /* BandCustomPages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BandCustomPages.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC0616DE1A9FF39A00A012EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC0616DF1A9FF39A00A012EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DC0616E11A9FF39A00A012EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DC0616E21A9FF39A00A012EB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DC0616E41A9FF39A00A012EB /* CustomPagesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomPagesViewController.h; sourceTree = "<group>"; };
+		DC0616E51A9FF39A00A012EB /* CustomPagesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomPagesViewController.m; sourceTree = "<group>"; };
+		DC0616E81A9FF39A00A012EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC0616EA1A9FF39A00A012EB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DC0616ED1A9FF39A00A012EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		DC0617351A9FF48800A012EB /* MicrosoftBandKit_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MicrosoftBandKit_iOS.framework; path = ../MicrosoftBandKit_iOS.framework; sourceTree = "<group>"; };
+		DC06173D1A9FFC7D00A012EB /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		DC0617801AA1009500A012EB /* A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = A.png; sourceTree = "<group>"; };
+		DC0617821AA1141200A012EB /* Aa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Aa.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC0616D71A9FF39A00A012EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC0617381A9FF4BE00A012EB /* MicrosoftBandKit_iOS.framework in Frameworks */,
+				DC06173F1A9FFC8300A012EB /* CoreBluetooth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC0616D11A9FF39A00A012EB = {
+			isa = PBXGroup;
+			children = (
+				DC0617371A9FF49600A012EB /* Framework */,
+				DC0616DC1A9FF39A00A012EB /* BandCustomPages */,
+				DC0616DB1A9FF39A00A012EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC0616DB1A9FF39A00A012EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC0616DA1A9FF39A00A012EB /* BandCustomPages.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC0616DC1A9FF39A00A012EB /* BandCustomPages */ = {
+			isa = PBXGroup;
+			children = (
+				DC0616E11A9FF39A00A012EB /* AppDelegate.h */,
+				DC0616E21A9FF39A00A012EB /* AppDelegate.m */,
+				DC0616E41A9FF39A00A012EB /* CustomPagesViewController.h */,
+				DC0616E51A9FF39A00A012EB /* CustomPagesViewController.m */,
+				DC0616E71A9FF39A00A012EB /* Main.storyboard */,
+				DC0616EA1A9FF39A00A012EB /* Images.xcassets */,
+				DC0616EC1A9FF39A00A012EB /* LaunchScreen.xib */,
+				DC0617801AA1009500A012EB /* A.png */,
+				DC0617821AA1141200A012EB /* Aa.png */,
+				DC0616DD1A9FF39A00A012EB /* Supporting Files */,
+			);
+			path = BandCustomPages;
+			sourceTree = "<group>";
+		};
+		DC0616DD1A9FF39A00A012EB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC0616DE1A9FF39A00A012EB /* Info.plist */,
+				DC0616DF1A9FF39A00A012EB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DC0617371A9FF49600A012EB /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				DC06173D1A9FFC7D00A012EB /* CoreBluetooth.framework */,
+				DC0617351A9FF48800A012EB /* MicrosoftBandKit_iOS.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC0616D91A9FF39A00A012EB /* BandCustomPages */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC0616FD1A9FF39B00A012EB /* Build configuration list for PBXNativeTarget "BandCustomPages" */;
+			buildPhases = (
+				DC0616D61A9FF39A00A012EB /* Sources */,
+				DC0616D71A9FF39A00A012EB /* Frameworks */,
+				DC0616D81A9FF39A00A012EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BandCustomPages;
+			productName = BandCustomPages;
+			productReference = DC0616DA1A9FF39A00A012EB /* BandCustomPages.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC0616D21A9FF39A00A012EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Microsoft;
+				TargetAttributes = {
+					DC0616D91A9FF39A00A012EB = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = DC0616D51A9FF39A00A012EB /* Build configuration list for PBXProject "BandCustomPages" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC0616D11A9FF39A00A012EB;
+			productRefGroup = DC0616DB1A9FF39A00A012EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC0616D91A9FF39A00A012EB /* BandCustomPages */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC0616D81A9FF39A00A012EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC0617831AA1141200A012EB /* Aa.png in Resources */,
+				DC0616E91A9FF39A00A012EB /* Main.storyboard in Resources */,
+				DC0617811AA1009500A012EB /* A.png in Resources */,
+				DC0616EE1A9FF39A00A012EB /* LaunchScreen.xib in Resources */,
+				DC0616EB1A9FF39A00A012EB /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC0616D61A9FF39A00A012EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC0616E61A9FF39A00A012EB /* CustomPagesViewController.m in Sources */,
+				DC0616E31A9FF39A00A012EB /* AppDelegate.m in Sources */,
+				DC0616E01A9FF39A00A012EB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DC0616E71A9FF39A00A012EB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC0616E81A9FF39A00A012EB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DC0616EC1A9FF39A00A012EB /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC0616ED1A9FF39A00A012EB /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC0616FB1A9FF39B00A012EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC0616FC1A9FF39B00A012EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC0616FE1A9FF39B00A012EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"${SRCROOT}/../",
+				);
+				INFOPLIST_FILE = BandCustomPages/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DC0616FF1A9FF39B00A012EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"${SRCROOT}/../",
+				);
+				INFOPLIST_FILE = BandCustomPages/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC0616D51A9FF39A00A012EB /* Build configuration list for PBXProject "BandCustomPages" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC0616FB1A9FF39B00A012EB /* Debug */,
+				DC0616FC1A9FF39B00A012EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC0616FD1A9FF39B00A012EB /* Build configuration list for PBXNativeTarget "BandCustomPages" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC0616FE1A9FF39B00A012EB /* Debug */,
+				DC0616FF1A9FF39B00A012EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC0616D21A9FF39A00A012EB /* Project object */;
+}

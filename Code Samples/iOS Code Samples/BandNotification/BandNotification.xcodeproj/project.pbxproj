@@ -1,0 +1,340 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC0617121A9FF3F600A012EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0617111A9FF3F600A012EB /* main.m */; };
+		DC0617151A9FF3F600A012EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0617141A9FF3F600A012EB /* AppDelegate.m */; };
+		DC0617181A9FF3F600A012EB /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0617171A9FF3F600A012EB /* NotificationViewController.m */; };
+		DC06171B1A9FF3F600A012EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC0617191A9FF3F600A012EB /* Main.storyboard */; };
+		DC06171D1A9FF3F600A012EB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC06171C1A9FF3F600A012EB /* Images.xcassets */; };
+		DC0617201A9FF3F600A012EB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC06171E1A9FF3F600A012EB /* LaunchScreen.xib */; };
+		DC06173C1A9FF4FB00A012EB /* MicrosoftBandKit_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC06173A1A9FF4F300A012EB /* MicrosoftBandKit_iOS.framework */; };
+		DC0617421AA0EF4000A012EB /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC0617401AA0EF3900A012EB /* CoreBluetooth.framework */; };
+		DC06178D1AA14F3600A012EB /* B.png in Resources */ = {isa = PBXBuildFile; fileRef = DC06178B1AA14F3600A012EB /* B.png */; };
+		DC06178E1AA14F3600A012EB /* Bb.png in Resources */ = {isa = PBXBuildFile; fileRef = DC06178C1AA14F3600A012EB /* Bb.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DC06170C1A9FF3F500A012EB /* BandNotification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BandNotification.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC0617101A9FF3F500A012EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC0617111A9FF3F600A012EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DC0617131A9FF3F600A012EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DC0617141A9FF3F600A012EB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DC0617161A9FF3F600A012EB /* NotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationViewController.h; sourceTree = "<group>"; };
+		DC0617171A9FF3F600A012EB /* NotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationViewController.m; sourceTree = "<group>"; };
+		DC06171A1A9FF3F600A012EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC06171C1A9FF3F600A012EB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DC06171F1A9FF3F600A012EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		DC06173A1A9FF4F300A012EB /* MicrosoftBandKit_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MicrosoftBandKit_iOS.framework; path = ../MicrosoftBandKit_iOS.framework; sourceTree = "<group>"; };
+		DC0617401AA0EF3900A012EB /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		DC06178B1AA14F3600A012EB /* B.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = B.png; sourceTree = "<group>"; };
+		DC06178C1AA14F3600A012EB /* Bb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bb.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC0617091A9FF3F500A012EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC06173C1A9FF4FB00A012EB /* MicrosoftBandKit_iOS.framework in Frameworks */,
+				DC0617421AA0EF4000A012EB /* CoreBluetooth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC0617031A9FF3F500A012EB = {
+			isa = PBXGroup;
+			children = (
+				DC0617391A9FF4CA00A012EB /* Framework */,
+				DC06170E1A9FF3F500A012EB /* BandNotification */,
+				DC06170D1A9FF3F500A012EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC06170D1A9FF3F500A012EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC06170C1A9FF3F500A012EB /* BandNotification.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC06170E1A9FF3F500A012EB /* BandNotification */ = {
+			isa = PBXGroup;
+			children = (
+				DC0617131A9FF3F600A012EB /* AppDelegate.h */,
+				DC0617141A9FF3F600A012EB /* AppDelegate.m */,
+				DC0617161A9FF3F600A012EB /* NotificationViewController.h */,
+				DC0617171A9FF3F600A012EB /* NotificationViewController.m */,
+				DC0617191A9FF3F600A012EB /* Main.storyboard */,
+				DC06171C1A9FF3F600A012EB /* Images.xcassets */,
+				DC06171E1A9FF3F600A012EB /* LaunchScreen.xib */,
+				DC06178B1AA14F3600A012EB /* B.png */,
+				DC06178C1AA14F3600A012EB /* Bb.png */,
+				DC06170F1A9FF3F500A012EB /* Supporting Files */,
+			);
+			path = BandNotification;
+			sourceTree = "<group>";
+		};
+		DC06170F1A9FF3F500A012EB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC0617101A9FF3F500A012EB /* Info.plist */,
+				DC0617111A9FF3F600A012EB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DC0617391A9FF4CA00A012EB /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				DC0617401AA0EF3900A012EB /* CoreBluetooth.framework */,
+				DC06173A1A9FF4F300A012EB /* MicrosoftBandKit_iOS.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC06170B1A9FF3F500A012EB /* BandNotification */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC06172F1A9FF3F600A012EB /* Build configuration list for PBXNativeTarget "BandNotification" */;
+			buildPhases = (
+				DC0617081A9FF3F500A012EB /* Sources */,
+				DC0617091A9FF3F500A012EB /* Frameworks */,
+				DC06170A1A9FF3F500A012EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BandNotification;
+			productName = BandNotification;
+			productReference = DC06170C1A9FF3F500A012EB /* BandNotification.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC0617041A9FF3F500A012EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Microsoft;
+				TargetAttributes = {
+					DC06170B1A9FF3F500A012EB = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = DC0617071A9FF3F500A012EB /* Build configuration list for PBXProject "BandNotification" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC0617031A9FF3F500A012EB;
+			productRefGroup = DC06170D1A9FF3F500A012EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC06170B1A9FF3F500A012EB /* BandNotification */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC06170A1A9FF3F500A012EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC06178E1AA14F3600A012EB /* Bb.png in Resources */,
+				DC06171B1A9FF3F600A012EB /* Main.storyboard in Resources */,
+				DC0617201A9FF3F600A012EB /* LaunchScreen.xib in Resources */,
+				DC06178D1AA14F3600A012EB /* B.png in Resources */,
+				DC06171D1A9FF3F600A012EB /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC0617081A9FF3F500A012EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC0617181A9FF3F600A012EB /* NotificationViewController.m in Sources */,
+				DC0617151A9FF3F600A012EB /* AppDelegate.m in Sources */,
+				DC0617121A9FF3F600A012EB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DC0617191A9FF3F600A012EB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC06171A1A9FF3F600A012EB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DC06171E1A9FF3F600A012EB /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC06171F1A9FF3F600A012EB /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC06172D1A9FF3F600A012EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC06172E1A9FF3F600A012EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC0617301A9FF3F600A012EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"${SRCROOT}/../",
+				);
+				INFOPLIST_FILE = BandNotification/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DC0617311A9FF3F600A012EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"${SRCROOT}/../",
+				);
+				INFOPLIST_FILE = BandNotification/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC0617071A9FF3F500A012EB /* Build configuration list for PBXProject "BandNotification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC06172D1A9FF3F600A012EB /* Debug */,
+				DC06172E1A9FF3F600A012EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC06172F1A9FF3F600A012EB /* Build configuration list for PBXNativeTarget "BandNotification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC0617301A9FF3F600A012EB /* Debug */,
+				DC0617311A9FF3F600A012EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC0617041A9FF3F500A012EB /* Project object */;
+}

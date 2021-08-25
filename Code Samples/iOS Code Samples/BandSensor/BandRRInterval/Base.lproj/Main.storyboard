@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Interval View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="RRIntervalViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sbn-v0-AeR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B5d-Es-vTx">
+                                <rect key="frame" x="16" y="28" width="382" height="44"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="WE7-1w-15q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Start RR Interval Sensor">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapStartRRIntervalSensorButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="vL3-vJ-Ze7"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Microsoft Band!!!" translatesAutoresizingMaskIntoConstraints="NO" id="43e-zD-fXP">
+                                <rect key="frame" x="16" y="107" width="382" height="609"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.0079773027569999995" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="43e-zD-fXP" firstAttribute="top" secondItem="B5d-Es-vTx" secondAttribute="bottom" constant="35" id="54x-yI-BCf"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="43e-zD-fXP" secondAttribute="bottom" constant="19" id="6qc-lu-ikx"/>
+                            <constraint firstItem="43e-zD-fXP" firstAttribute="leading" secondItem="sbn-v0-AeR" secondAttribute="leadingMargin" id="EnV-44-DBH"/>
+                            <constraint firstItem="B5d-Es-vTx" firstAttribute="leading" secondItem="sbn-v0-AeR" secondAttribute="leadingMargin" id="Ioa-cy-9WL"/>
+                            <constraint firstItem="B5d-Es-vTx" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="l16-lp-ARQ"/>
+                            <constraint firstItem="B5d-Es-vTx" firstAttribute="trailing" secondItem="sbn-v0-AeR" secondAttribute="trailingMargin" id="vDJ-y1-JL5"/>
+                            <constraint firstItem="43e-zD-fXP" firstAttribute="trailing" secondItem="sbn-v0-AeR" secondAttribute="trailingMargin" id="zsl-uy-DGt"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="startRRIntervalSensorButton" destination="B5d-Es-vTx" id="YPq-9X-ZDv"/>
+                        <outlet property="txtOutput" destination="43e-zD-fXP" id="fNh-wv-glM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

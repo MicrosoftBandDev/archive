@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Band Tile Event App</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="steps">Steps to use this app:\n
+        1. Pair your band with the phone\n
+        2. Make sure Microsoft Health is installed\n
+        3. Press the Start button\n
+        4. If the band is full, go to Microsoft Health to remove one tile, then repeat step 3\n
+        5. If it has not already been added, a new tile should be placed on your band\n
+        6. Enter the tile and test the buttons\n
+        7. Press the Stop button to end the demo and remove the tile.</string>
+    <string name="start">Start</string>
+    <string name="intent_key">new intent</string>
+    <string name="intent_value">TileEventReceiver</string>
+    <string name="stop">Stop</string>
+</resources>

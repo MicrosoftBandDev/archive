@@ -1,0 +1,133 @@
+﻿<Page
+    x:Class="Personalization.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Personalization"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Button
+            Content="Set, Get, Display Custom MeTile Image"
+            HorizontalAlignment="Left" VerticalAlignment="Top"
+            Margin="87,67,0,0"
+            Click="SetGetMeTileImage_Click" FontSize="20"
+        />
+        <Image
+            Name="MeTileImage"
+            HorizontalAlignment="Left" VerticalAlignment="Top"
+            Margin="90,127,0,0"
+            Stretch="None"
+            MinHeight="50" MinWidth="100"
+        />
+        <Button
+            Content="Set, Get, Display Custom Theme"
+            HorizontalAlignment="Left" VerticalAlignment="Top"
+            Margin="521,67,0,0"
+            Click="SetGetTheme_Click" FontSize="20"
+        />
+        <StackPanel
+            HorizontalAlignment="Left" VerticalAlignment="Top"
+            Margin="524,127,0,0"
+        >
+            <StackPanel
+                Orientation="Horizontal"
+                Margin="0,0,0,5"
+            >
+                <Border
+                    Name="ThemeColor_Base"
+                    Width="50" Height="50"
+                    VerticalAlignment="Center"
+                    Margin="0,0,20,0"
+                />
+                <TextBlock
+                    Text="Base"
+                    VerticalAlignment="Center" FontSize="20"
+                />
+            </StackPanel>
+            <StackPanel
+                Orientation="Horizontal"
+                Margin="0,0,0,5"
+            >
+                <Border
+                    Name="ThemeColor_Highlight"
+                    Width="50" Height="50"
+                    VerticalAlignment="Center"
+                    Margin="0,0,20,0"
+                />
+                <TextBlock
+                    Text="Highlight"
+                    VerticalAlignment="Center" FontSize="20"
+                />
+            </StackPanel>
+            <StackPanel
+                Orientation="Horizontal"
+                Margin="0,0,0,5"
+            >
+                <Border
+                    Name="ThemeColor_Lowlight"
+                    Width="50" Height="50"
+                    VerticalAlignment="Center"
+                    Margin="0,0,20,0"
+                />
+                <TextBlock
+                    Text="Lowlight"
+                    VerticalAlignment="Center" FontSize="20"
+                />
+            </StackPanel>
+            <StackPanel
+                Orientation="Horizontal"
+                Margin="0,0,0,5"
+            >
+                <Border
+                    Name="ThemeColor_SecondaryText"
+                    Width="50" Height="50"
+                    VerticalAlignment="Center"
+                    Margin="0,0,20,0"
+                />
+                <TextBlock
+                    Text="SecondaryText"
+                    VerticalAlignment="Center" FontSize="20"
+                />
+            </StackPanel>
+            <StackPanel
+                Orientation="Horizontal"
+                Margin="0,0,0,5"
+            >
+                <Border
+                    Name="ThemeColor_HighContrast"
+                    Width="50" Height="50"
+                    VerticalAlignment="Center"
+                    Margin="0,0,20,0"
+                />
+                <TextBlock
+                    Text="HighContrast"
+                    VerticalAlignment="Center" FontSize="20"
+                />
+            </StackPanel>
+            <StackPanel
+                Orientation="Horizontal"
+                Margin="0,0,0,5"
+            >
+                <Border
+                    Name="ThemeColor_Muted"
+                    Width="50" Height="50"
+                    VerticalAlignment="Center"
+                    Margin="0,0,20,0"
+                />
+                <TextBlock
+                    Text="Muted"
+                    VerticalAlignment="Center" FontSize="20"
+                />
+            </StackPanel>
+        </StackPanel>
+
+        <TextBlock
+            HorizontalAlignment="Left" VerticalAlignment="Bottom"
+            Margin="90,0,0,303"
+            TextWrapping="Wrap"
+            Text="{Binding StatusMessage}" FontSize="20"
+        />
+    </Grid>
+</Page>

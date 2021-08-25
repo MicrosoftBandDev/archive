@@ -1,0 +1,17 @@
+﻿<Page
+    x:Class="Tiles.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Tiles"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Button Content="Run" HorizontalAlignment="Left" Margin="10,28,0,0" VerticalAlignment="Top" Width="215" Click="Button_Click" FontFamily="Global User Interface"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,81,0,0" TextWrapping="Wrap" Text="Pair a Microsoft Band with the phone and click &quot;Run&quot;." VerticalAlignment="Top" Height="549" Width="380"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="MICROSOFT BAND SDK - TILES" VerticalAlignment="Top" Height="23" Width="380" FontSize="16"/>
+
+    </Grid>
+</Page>

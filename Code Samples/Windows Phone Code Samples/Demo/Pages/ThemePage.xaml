@@ -1,0 +1,246 @@
+﻿<!--
+    Copyright (c) Microsoft Corporation All rights reserved.  
+ 
+    MIT License: 
+ 
+    Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
+    documentation files (the  "Software"), to deal in the Software without restriction, including without limitation
+    the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software,
+    and to permit persons to whom the Software is furnished to do so, subject to the following conditions: 
+ 
+    The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. 
+ 
+    THE SOFTWARE IS PROVIDED ""AS IS"", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+    TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+    THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+    TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->
+
+<Page
+    x:Class="BandSdkSample.Pages.ThemePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BandSdkSample.Pages"
+    xmlns:model="using:BandSdkSample.ViewModel"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+>
+    <ScrollViewer>
+        <StackPanel
+            Margin="20,20,20,20">
+            <Border
+                Margin="0,0,0,20"
+                BorderThickness="0,0,0,5"
+                BorderBrush="{ThemeResource ApplicationForegroundThemeBrush}">
+                <StackPanel>
+                    <StackPanel>
+                        <TextBlock
+                            Text="Background Image"/>
+                        <StackPanel Orientation="Horizontal">
+                            <Button
+                                Content="Get Image"
+                                IsEnabled="{Binding Self, Converter={StaticResource GetClearImageThemeCommandEnabledConverter}}"
+                                Margin="0,0,5,0" Click="GetImage_Click"/>
+                            <Button
+                                Content="Clear Image"
+                                Command="{Binding ClearMeTileImage}"
+                                IsEnabled="{Binding Self, Converter={StaticResource GetClearImageThemeCommandEnabledConverter}}"
+                                Margin="0,0,5,0" Click="ClearImage_OnClick"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                        <Button
+                            Name="SelectImage"
+                                Content="Select..."
+                                Margin="0,0,5,0"
+                                Click="FindImage_Click"
+                                IsEnabled="{Binding FindingMeTileImage, Converter={StaticResource BoolNotConverter}}"/>
+                            <Button
+                                Content="Sample"
+                                Margin="0,0,5,0"
+                                Click="Sample_OnClick"
+                                IsEnabled="{Binding FindingMeTileImage, Converter={StaticResource BoolNotConverter}}"/>
+                        </StackPanel>
+                    </StackPanel>
+                        <Image
+                            Margin="0,0,0,5"
+                            Source="{Binding MeTileImage}"
+                            Stretch="None"/>
+                    <Button
+                        Content="Set Image"
+                        IsEnabled="{Binding Self, Converter={StaticResource SetImageCommandEnabledConverter}}"
+                        Margin="0,0,5,0" Click="SetImage_Click"/>
+                </StackPanel>
+            </Border>
+
+            <StackPanel>
+                <TextBlock
+                    Text="Theme"/>
+                <StackPanel Orientation="Horizontal">
+                    <Button
+                        Content="Get Theme"
+                        IsEnabled="{Binding Self, Converter={StaticResource GetClearImageThemeCommandEnabledConverter}}"
+                        Margin="0,0,5,0" Click="GetTheme_Click"/>
+                    <Button
+                        Content="Clear Theme"
+                        IsEnabled="{Binding Self, Converter={StaticResource GetClearImageThemeCommandEnabledConverter}}"
+                        Margin="0,0,5,0" Click="ClearTheme_Click"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Button
+                        Content="Set Theme"
+                        IsEnabled="{Binding Self, Converter={StaticResource SetThemeCommandEnabledConverter}}"
+                        Margin="0,0,5,0" Click="SetTheme_Click"/>
+                </StackPanel>
+                <StackPanel
+                    Visibility="{Binding Theme, Converter={StaticResource NullToVisibilityConverter}}">
+                    <StackPanel>
+                        <Grid
+                            Margin="0,0,0,5">
+                            <TextBlock Text="Base" VerticalAlignment="Center" TextWrapping="Wrap" Width="200" HorizontalAlignment="Left" />
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Column="1">
+                                <Border
+                                    Width="50" Height="30"
+                                    BorderBrush="White"
+                                    BorderThickness="2"
+                                    Margin="0,0,5,0"
+                                    >
+                                    <Border.Background>
+                                        <SolidColorBrush Color="{Binding Theme.Base, FallbackValue=Yellow}"/>
+                                    </Border.Background>
+                                </Border>
+                                <TextBox
+                                    Width="100"
+                                    MaxLength="6"
+                                    TextAlignment="Center"
+                                    InputScope="AlphanumericHalfWidth"
+                                    Text="{Binding Theme.Base, Converter={StaticResource ColorToHexNumericTextConverter}, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                            </StackPanel>
+                        </Grid>
+                    </StackPanel>
+                    <StackPanel>
+                        <Grid
+                            Margin="0,0,0,5">
+                            <TextBlock Text="Highlight" VerticalAlignment="Center" TextWrapping="Wrap" Width="200" HorizontalAlignment="Left" />
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Column="1">
+                                <Border
+                                    Width="50" Height="30"
+                                    BorderBrush="White"
+                                    BorderThickness="2"
+                                    Margin="0,0,5,0"
+                                    >
+                                    <Border.Background>
+                                        <SolidColorBrush Color="{Binding Theme.Highlight, FallbackValue=Yellow}"/>
+                                    </Border.Background>
+                                </Border>
+                                <TextBox
+                                    Width="100"
+                                    MaxLength="6"
+                                    TextAlignment="Center"
+                                    InputScope="AlphanumericHalfWidth"
+                                    Text="{Binding Theme.Highlight, Converter={StaticResource ColorToHexNumericTextConverter}, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                            </StackPanel>
+                        </Grid>
+                    </StackPanel>
+                    <StackPanel>
+                        <Grid
+                            Margin="0,0,0,5">
+                            <TextBlock Text="Lowlight" VerticalAlignment="Center" TextWrapping="Wrap" Width="200" HorizontalAlignment="Left" />
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Column="1">
+                                <Border
+                                    Width="50" Height="30"
+                                    BorderBrush="White"
+                                    BorderThickness="2"
+                                    Margin="0,0,5,0"
+                                    >
+                                    <Border.Background>
+                                        <SolidColorBrush Color="{Binding Theme.Lowlight, FallbackValue=Yellow}"/>
+                                    </Border.Background>
+                                </Border>
+                                <TextBox
+                                    Width="100"
+                                    MaxLength="6"
+                                    TextAlignment="Center"
+                                    InputScope="AlphanumericHalfWidth"
+                                    Text="{Binding Theme.Lowlight, Converter={StaticResource ColorToHexNumericTextConverter}, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                            </StackPanel>
+                        </Grid>
+                    </StackPanel>
+                    <StackPanel>
+                        <Grid
+                            Margin="0,0,0,5">
+                            <TextBlock Text="Secondary Text" VerticalAlignment="Center" TextWrapping="Wrap" Width="200" HorizontalAlignment="Left" />
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Column="1">
+                                <Border
+                                    Width="50" Height="30"
+                                    BorderBrush="White"
+                                    BorderThickness="2"
+                                    Margin="0,0,5,0"
+                                    >
+                                    <Border.Background>
+                                        <SolidColorBrush Color="{Binding Theme.SecondaryText, FallbackValue=Yellow}"/>
+                                    </Border.Background>
+                                </Border>
+                                <TextBox
+                                    Width="100"
+                                    MaxLength="6"
+                                    TextAlignment="Center"
+                                    InputScope="AlphanumericHalfWidth"
+                                    Text="{Binding Theme.SecondaryText, Converter={StaticResource ColorToHexNumericTextConverter}, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                            </StackPanel>
+                        </Grid>
+                    </StackPanel>
+                    <StackPanel>
+                        <Grid
+                            Margin="0,0,0,5">
+                            <TextBlock Text="High Contrast" VerticalAlignment="Center" TextWrapping="Wrap" Width="200" HorizontalAlignment="Left" />
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Column="1">
+                                <Border
+                                    Width="50" Height="30"
+                                    BorderBrush="White"
+                                    BorderThickness="2"
+                                    Margin="0,0,5,0"
+                                    >
+                                    <Border.Background>
+                                        <SolidColorBrush Color="{Binding Theme.HighContrast, FallbackValue=Yellow}"/>
+                                    </Border.Background>
+                                </Border>
+                                <TextBox
+                                    Width="100"
+                                    MaxLength="6"
+                                    TextAlignment="Center"
+                                    InputScope="AlphanumericHalfWidth"
+                                    Text="{Binding Theme.HighContrast, Converter={StaticResource ColorToHexNumericTextConverter}, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                            </StackPanel>
+                        </Grid>
+                    </StackPanel>
+                    <StackPanel>
+                        <Grid
+                            Margin="0,0,0,5">
+                            <TextBlock Text="Muted" VerticalAlignment="Center" TextWrapping="Wrap" Width="200" HorizontalAlignment="Left" />
+                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Grid.Column="1">
+                                <Border
+                                    Width="50" Height="30"
+                                    BorderBrush="White"
+                                    BorderThickness="2"
+                                    Margin="0,0,5,0"
+                                    >
+                                    <Border.Background>
+                                        <SolidColorBrush Color="{Binding Theme.Muted, FallbackValue=Yellow}"/>
+                                    </Border.Background>
+                                </Border>
+                                <TextBox
+                                    Width="100"
+                                    MaxLength="6"
+                                    TextAlignment="Center"
+                                    InputScope="AlphanumericHalfWidth"
+                                    Text="{Binding Theme.Muted, Converter={StaticResource ColorToHexNumericTextConverter}, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                            </StackPanel>
+                        </Grid>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </ScrollViewer>
+</Page>

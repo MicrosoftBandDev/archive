@@ -1,0 +1,334 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC06175D1AA1000300A012EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC06175C1AA1000300A012EB /* main.m */; };
+		DC0617601AA1000300A012EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC06175F1AA1000300A012EB /* AppDelegate.m */; };
+		DC0617631AA1000300A012EB /* PersonalizationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0617621AA1000300A012EB /* PersonalizationViewController.m */; };
+		DC0617661AA1000300A012EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC0617641AA1000300A012EB /* Main.storyboard */; };
+		DC0617681AA1000300A012EB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC0617671AA1000300A012EB /* Images.xcassets */; };
+		DC06176B1AA1000300A012EB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DC0617691AA1000300A012EB /* LaunchScreen.xib */; };
+		DC0617891AA14ECD00A012EB /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC0617871AA14EBF00A012EB /* CoreBluetooth.framework */; };
+		DC06178A1AA14ECD00A012EB /* MicrosoftBandKit_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC0617841AA14E9D00A012EB /* MicrosoftBandKit_iOS.framework */; };
+		DC0617A51AA1621400A012EB /* SampleMeTileImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC0617A41AA1621400A012EB /* SampleMeTileImage.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DC0617571AA1000300A012EB /* BandPersonalization.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BandPersonalization.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC06175B1AA1000300A012EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC06175C1AA1000300A012EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DC06175E1AA1000300A012EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DC06175F1AA1000300A012EB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DC0617611AA1000300A012EB /* PersonalizationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonalizationViewController.h; sourceTree = "<group>"; };
+		DC0617621AA1000300A012EB /* PersonalizationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonalizationViewController.m; sourceTree = "<group>"; };
+		DC0617651AA1000300A012EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC0617671AA1000300A012EB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DC06176A1AA1000300A012EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		DC0617841AA14E9D00A012EB /* MicrosoftBandKit_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MicrosoftBandKit_iOS.framework; path = ../MicrosoftBandKit_iOS.framework; sourceTree = "<group>"; };
+		DC0617871AA14EBF00A012EB /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		DC0617A41AA1621400A012EB /* SampleMeTileImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SampleMeTileImage.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC0617541AA1000300A012EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC0617891AA14ECD00A012EB /* CoreBluetooth.framework in Frameworks */,
+				DC06178A1AA14ECD00A012EB /* MicrosoftBandKit_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC06174E1AA1000300A012EB = {
+			isa = PBXGroup;
+			children = (
+				DC0617861AA14EA400A012EB /* Framework */,
+				DC0617591AA1000300A012EB /* BandPersonalization */,
+				DC0617581AA1000300A012EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC0617581AA1000300A012EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC0617571AA1000300A012EB /* BandPersonalization.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC0617591AA1000300A012EB /* BandPersonalization */ = {
+			isa = PBXGroup;
+			children = (
+				DC06175E1AA1000300A012EB /* AppDelegate.h */,
+				DC06175F1AA1000300A012EB /* AppDelegate.m */,
+				DC0617611AA1000300A012EB /* PersonalizationViewController.h */,
+				DC0617621AA1000300A012EB /* PersonalizationViewController.m */,
+				DC0617641AA1000300A012EB /* Main.storyboard */,
+				DC0617671AA1000300A012EB /* Images.xcassets */,
+				DC0617691AA1000300A012EB /* LaunchScreen.xib */,
+				DC0617A41AA1621400A012EB /* SampleMeTileImage.jpg */,
+				DC06175A1AA1000300A012EB /* Supporting Files */,
+			);
+			path = BandPersonalization;
+			sourceTree = "<group>";
+		};
+		DC06175A1AA1000300A012EB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC06175B1AA1000300A012EB /* Info.plist */,
+				DC06175C1AA1000300A012EB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DC0617861AA14EA400A012EB /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				DC0617871AA14EBF00A012EB /* CoreBluetooth.framework */,
+				DC0617841AA14E9D00A012EB /* MicrosoftBandKit_iOS.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC0617561AA1000300A012EB /* BandPersonalization */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC06177A1AA1000300A012EB /* Build configuration list for PBXNativeTarget "BandPersonalization" */;
+			buildPhases = (
+				DC0617531AA1000300A012EB /* Sources */,
+				DC0617541AA1000300A012EB /* Frameworks */,
+				DC0617551AA1000300A012EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BandPersonalization;
+			productName = BandPersonalization;
+			productReference = DC0617571AA1000300A012EB /* BandPersonalization.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC06174F1AA1000300A012EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Microsoft;
+				TargetAttributes = {
+					DC0617561AA1000300A012EB = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = DC0617521AA1000300A012EB /* Build configuration list for PBXProject "BandPersonalization" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC06174E1AA1000300A012EB;
+			productRefGroup = DC0617581AA1000300A012EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC0617561AA1000300A012EB /* BandPersonalization */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC0617551AA1000300A012EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC0617661AA1000300A012EB /* Main.storyboard in Resources */,
+				DC0617A51AA1621400A012EB /* SampleMeTileImage.jpg in Resources */,
+				DC06176B1AA1000300A012EB /* LaunchScreen.xib in Resources */,
+				DC0617681AA1000300A012EB /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC0617531AA1000300A012EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC0617631AA1000300A012EB /* PersonalizationViewController.m in Sources */,
+				DC0617601AA1000300A012EB /* AppDelegate.m in Sources */,
+				DC06175D1AA1000300A012EB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DC0617641AA1000300A012EB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC0617651AA1000300A012EB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DC0617691AA1000300A012EB /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC06176A1AA1000300A012EB /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC0617781AA1000300A012EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC0617791AA1000300A012EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC06177B1AA1000300A012EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"${SRCROOT}/../",
+				);
+				INFOPLIST_FILE = BandPersonalization/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DC06177C1AA1000300A012EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"${SRCROOT}/../",
+				);
+				INFOPLIST_FILE = BandPersonalization/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC0617521AA1000300A012EB /* Build configuration list for PBXProject "BandPersonalization" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC0617781AA1000300A012EB /* Debug */,
+				DC0617791AA1000300A012EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC06177A1AA1000300A012EB /* Build configuration list for PBXNativeTarget "BandPersonalization" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC06177B1AA1000300A012EB /* Debug */,
+				DC06177C1AA1000300A012EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC06174F1AA1000300A012EB /* Project object */;
+}

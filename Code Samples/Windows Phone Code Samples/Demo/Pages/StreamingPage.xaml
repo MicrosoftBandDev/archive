@@ -1,0 +1,279 @@
+﻿<!--
+    Copyright (c) Microsoft Corporation All rights reserved.  
+ 
+    MIT License: 
+ 
+    Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
+    documentation files (the  "Software"), to deal in the Software without restriction, including without limitation
+    the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software,
+    and to permit persons to whom the Software is furnished to do so, subject to the following conditions: 
+ 
+    The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. 
+ 
+    THE SOFTWARE IS PROVIDED ""AS IS"", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+    TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+    THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+    TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->
+
+<Page
+    x:Class="BandSdkSample.Pages.StreamingPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BandSdkSample.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+>
+    <ScrollViewer>
+        <StackPanel>
+            <ToggleSwitch
+                IsEnabled="{Binding Self, Converter={StaticResource ToggleStreamingCommandEnabledConverter}}"
+                Toggled="AccelToggle_Toggled">
+                <TextBlock Text="Accelerometer" FontSize="20"/>
+            </ToggleSwitch>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <RadioButton
+                    Name="Accel16ms"
+                    GroupName="Accel" Content="16ms"/>
+                <RadioButton
+                    Name="Accel32ms"
+                    GroupName="Accel" Grid.Column="1" Content="32ms"/>
+                <RadioButton
+                    Name="Accel128ms"
+                    GroupName="Accel" Grid.Column="2" Content="128ms"
+                    IsChecked="true"/>
+            </Grid>
+            <StackPanel
+                Margin="20,0,0,0"
+                Name="AccelStreaming"
+                Visibility="Collapsed">
+                <TextBlock FontSize="20">
+                                <Run Text="AccelerationX: "/>
+                                <Run Text="{Binding Accel_Ax}"/>
+                </TextBlock>
+                <TextBlock FontSize="20">
+                                <Run Text="AccelerationY: "/>
+                                <Run Text="{Binding Accel_Ay}"/>
+                </TextBlock>
+                <TextBlock FontSize="20">
+                                <Run Text="AccelerationZ: "/>
+                                <Run Text="{Binding Accel_Az}"/>
+                </TextBlock>
+                <TextBlock FontSize="20">
+                                <Run Text="Timestamp: "/>
+                                <Run Text="{Binding AccelTimestamp}"/>
+                </TextBlock>
+            </StackPanel>
+
+            <ToggleSwitch
+                IsEnabled="{Binding Self, Converter={StaticResource ToggleStreamingCommandEnabledConverter}}"
+                Toggled="AccelGyro_Toggled"
+                >
+                <TextBlock Text="Accelerometer+GyroScope" FontSize="20"/>
+            </ToggleSwitch>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <RadioButton
+                    Name="Motion16ms"
+                    GroupName="Motion" Content="16ms"/>
+                <RadioButton
+                    Name="Motion32ms"
+                    GroupName="Motion" Grid.Column="1" Content="32ms"/>
+                <RadioButton
+                    Name="Motion128ms"
+                    GroupName="Motion" Grid.Column="2" Content="128ms"
+                    IsChecked="true"/>
+            </Grid>
+            <StackPanel
+                Margin="20,0,0,0"
+                Name="AccelGyroStreaming"
+                Visibility="Collapsed">
+                <TextBlock FontSize="20">
+                                <Run Text="AccelrationX: "/>
+                                <Run Text="{Binding Motion_Ax}"/>
+                </TextBlock>
+                <TextBlock FontSize="20">
+                                <Run Text="AccelerationY: "/>
+                                <Run Text="{Binding Motion_Ay}"/>
+                </TextBlock>
+                <TextBlock FontSize="20">
+                                <Run Text="AccelerationZ: "/>
+                                <Run Text="{Binding Motion_Az}"/>
+                </TextBlock>
+                <TextBlock FontSize="20">
+                                <Run Text="AngularVelocityX: "/>
+                                <Run Text="{Binding Motion_Gx}"/>
+                </TextBlock>
+                <TextBlock FontSize="20">
+                                <Run Text="AngularVelocityY: "/>
+                                <Run Text="{Binding Motion_Gy}"/>
+                </TextBlock>
+                <TextBlock FontSize="20">
+                                <Run Text="AngularVelocityZ: "/>
+                                <Run Text="{Binding Motion_Gz}"/>
+                </TextBlock>
+                <TextBlock FontSize="20">
+                                <Run Text="Timestamp: "/>
+                                <Run Text="{Binding MotionTimestamp}"/>
+                </TextBlock>
+            </StackPanel>
+
+            <ToggleSwitch
+                IsOn="{Binding DistanceStreaming}"
+                IsEnabled="{Binding Self, Converter={StaticResource ToggleStreamingCommandEnabledConverter}}"
+                Toggled="DistanceStreaming_Toggled">
+                <TextBlock Text="Distance" FontSize="20"/>
+            </ToggleSwitch>
+            <StackPanel
+                Margin="20,0,0,0"
+                Name="DistanceStreaming"
+                Visibility="Collapsed">
+                <TextBlock FontSize="20">
+                                <Run Text="TotalDistance: "/>
+                                <Run Text="{Binding Distance}"/>
+                </TextBlock>
+                <TextBlock FontSize="20">
+                                <Run Text="Speed: "/>
+                                <Run Text="{Binding Speed}"/>
+                </TextBlock>
+                <TextBlock FontSize="20">
+                                <Run Text="Pace: "/>
+                                <Run Text="{Binding Pace}"/>
+                </TextBlock>
+                <TextBlock FontSize="20">
+                                <Run Text="Motion: "/>
+                                <Run Text="{Binding Motion}"/>
+                </TextBlock>
+                <TextBlock FontSize="20">
+                                <Run Text="Timestamp: "/>
+                                <Run Text="{Binding DistanceTimestamp}"/>
+                </TextBlock>
+            </StackPanel>
+
+            <ToggleSwitch
+                IsOn="{Binding HRStreaming}"
+                IsEnabled="{Binding Self, Converter={StaticResource ToggleStreamingCommandEnabledConverter}}"
+                Toggled="HRStreaming_Toggled">
+                <TextBlock VerticalAlignment="Center" Text="Heart Rate" FontSize="20"/>
+            </ToggleSwitch>
+            <StackPanel
+                Margin="20,0,0,0"
+                Name="HRStreaming"
+                Visibility="Collapsed">
+                <TextBlock FontSize="20">
+                    <Run Text="HeartRate: "/>
+                    <Run Text="{Binding HeartRate}"/>
+                </TextBlock>
+                <TextBlock FontSize="20">
+                    <Run Text="Quality: "/>
+                    <Run Text="{Binding HRQuality}"/>
+                </TextBlock>
+                <TextBlock FontSize="20">
+                    <Run Text="Timestamp: "/>
+                    <Run Text="{Binding HrTimestamp}"/>
+                </TextBlock>
+            </StackPanel>
+
+            <ToggleSwitch
+                IsOn="{Binding PedometerStreaming}"
+                IsEnabled="{Binding Self, Converter={StaticResource ToggleStreamingCommandEnabledConverter}}"
+                Toggled="PedometerStreaming_Toggled">
+                <TextBlock Text="Pedometer" FontSize="20"/>
+            </ToggleSwitch>
+            <StackPanel
+                Margin="20,0,0,0"
+                Name="PedometerStreaming"
+                Visibility="Collapsed">
+                <TextBlock FontSize="20">
+                    <Run Text="TotalSteps: "/>
+                    <Run Text="{Binding Steps}"/>
+                </TextBlock>
+                <TextBlock FontSize="20">
+                    <Run Text="Timestamp: "/>
+                    <Run Text="{Binding PedometerTimestamp}"/>
+                </TextBlock>
+            </StackPanel>
+
+            <ToggleSwitch
+                IsOn="{Binding SkinTempStreaming}"
+                IsEnabled="{Binding Self, Converter={StaticResource ToggleStreamingCommandEnabledConverter}}"
+                Toggled="SkinTempStreaming_Toggled">
+                <TextBlock Text="Skin Temperature" FontSize="20"/>
+            </ToggleSwitch>
+            <StackPanel
+                Margin="20,0,0,0"
+                Name="SkinTempStreaming"
+                Visibility="Collapsed">
+                <TextBlock FontSize="20">
+                                <Run Text="Temperature: "/>
+                                <Run Text="{Binding SkinTemp}"/>
+                </TextBlock>
+                <TextBlock FontSize="20">
+                                <Run Text="Timestamp: "/>
+                                <Run Text="{Binding SkinTempTimestamp}"/>
+                </TextBlock>
+            </StackPanel>
+
+            <ToggleSwitch
+                IsOn="{Binding UVStreaming}"
+                IsEnabled="{Binding Self, Converter={StaticResource ToggleStreamingCommandEnabledConverter}}"
+                Toggled="UVStreaming_Toggled">
+                <TextBlock Text="Ultraviolet" FontSize="20"/>
+            </ToggleSwitch>
+            <StackPanel
+                Margin="20,0,0,0"
+                Name="UVStreaming"
+                Visibility="Collapsed">
+                <TextBlock FontSize="20">
+                                <Run Text="ExposureLevel: "/>
+                                <Run Text="{Binding UVIndexX10}"/>
+                </TextBlock>
+                <TextBlock FontSize="20">
+                                <Run Text="Timestamp: "/>
+                                <Run Text="{Binding UvTimestamp}"/>
+                </TextBlock>
+            </StackPanel>
+
+            <ToggleSwitch
+                IsOn="{Binding DeviceContactStreaming}"
+                IsEnabled="{Binding Self, Converter={StaticResource ToggleStreamingCommandEnabledConverter}}"
+                Toggled="DeviceContactStreaming_Toggled">
+                <TextBlock Text="Contact" FontSize="20"/>
+            </ToggleSwitch>
+            <StackPanel
+                Margin="20,0,0,0"
+                Name="DeviceContactStreaming"
+                Visibility="Collapsed">
+                <TextBlock FontSize="20">
+                                    <Run Text="WornState: "/>
+                                    <Run Text="{Binding WornState}"/>
+                </TextBlock>
+                <TextBlock FontSize="20">
+                                    <Run Text="Timestamp: "/>
+                                    <Run Text="{Binding WornStateTimestamp}"/>
+                </TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button
+                    Content="GetCurrentStateAsync()"
+                    FontSize="20"
+                    IsEnabled="{Binding Main.BandClient, Converter={StaticResource NullToBoolConverter}}"
+                    Click="GetCurrentState_Clicked"/>
+                <TextBlock
+                    Name="CurrentWornState"
+                    VerticalAlignment="Center" FontSize="20"/>
+            </StackPanel>
+        </StackPanel>
+    </ScrollViewer>
+</Page>

@@ -1,0 +1,181 @@
+﻿<!--
+    Copyright (c) Microsoft Corporation All rights reserved.  
+ 
+    MIT License: 
+ 
+    Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
+    documentation files (the  "Software"), to deal in the Software without restriction, including without limitation
+    the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software,
+    and to permit persons to whom the Software is furnished to do so, subject to the following conditions: 
+ 
+    The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. 
+ 
+    THE SOFTWARE IS PROVIDED ""AS IS"", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+    TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+    THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+    TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->
+
+<Page
+    x:Class="BandSdkSample.Pages.TilesPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BandSdkSample.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+>
+    <ScrollViewer>
+        <StackPanel
+            Margin="20,20,20,20">
+            <Border
+                Margin="0,0,0,20"
+                BorderThickness="0,0,0,5"
+                BorderBrush="{ThemeResource ApplicationForegroundThemeBrush}">
+                <StackPanel
+                    Margin="0,0,0,20">
+                    <TextBlock>
+                        <TextBlock.Inlines>
+                            <Run Text="Available Space: " />
+                            <Run Text="{Binding AvailableSpace, TargetNullValue=?}" />
+                        </TextBlock.Inlines>
+                    </TextBlock>
+                    <TextBlock
+                        Text="New Tile Neme" />
+                    <TextBox
+                        Text="{Binding NewTileName, Mode=TwoWay}"
+                        MaxLength="21" />
+                    <StackPanel
+                        Orientation="Horizontal">
+                        <Button
+                            Content="Get Tiles"
+                            Margin="0,0,5,0"
+                            IsEnabled="{Binding Self, Converter={StaticResource GetTileCommandEnabledConverter}}"
+                            Click="GetTiles_Click" />
+                        <Button
+                            Content="Add Tile"
+                            Margin="0,0,5,0"
+                            IsEnabled="{Binding Self, Converter={StaticResource AddTileCommandEnabledConverter}}"
+                            Click="AddTile_Click" />
+                    </StackPanel>
+                    <CheckBox
+                        Name="NewTileBadging"
+                        Content="New Tile Badging"/>
+                </StackPanel>                
+            </Border>
+            <StackPanel
+                Margin="0,0,0,20">
+                <ListBox
+                    MaxHeight="300"
+                    Name="TilesList"
+                    ItemsSource="{Binding Tiles}"
+                    SelectedIndex="{Binding SelectedTileIndex, Mode=TwoWay}"
+                    SelectedItem="{Binding SelectedTile, Mode=TwoWay}" Background="{x:Null}" Foreground="White">
+                    <ListBox.ItemContainerStyle>
+                        <Style TargetType="ListBoxItem">
+                            <Setter Property="Margin" Value="0,0,0,1"/>
+                            <Setter Property="Padding" Value="0"/>
+                            <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="ListBoxItem">
+                                        <Border>
+                                            <VisualStateManager.VisualStateGroups>
+                                                <VisualStateGroup x:Name="SelectionStates">
+                                                    <VisualState x:Name="Unselected"/>
+                                                    <VisualState x:Name="Selected">
+                                                        <Storyboard>
+                                                            <DoubleAnimation
+                                                            Storyboard.TargetName="SelectionBorder"
+                                                            Storyboard.TargetProperty="Opacity"
+                                                            Duration="0" To="1" />
+                                                        </Storyboard>
+                                                    </VisualState>
+                                                    <VisualState x:Name="SelectedUnfocused">
+                                                        <Storyboard>
+                                                            <DoubleAnimation
+                                                            Storyboard.TargetName="SelectionBorder"
+                                                            Storyboard.TargetProperty="Opacity"
+                                                            Duration="0" To="1" />
+                                                        </Storyboard>
+                                                    </VisualState>
+                                                </VisualStateGroup>
+                                            </VisualStateManager.VisualStateGroups>
+                                            <Grid>
+                                                <ContentPresenter />
+                                                <Border
+                                                    x:Name="SelectionBorder"
+                                                    BorderThickness="3"
+                                                    BorderBrush="{StaticResource ApplicationForegroundThemeBrush}"
+                                                    Opacity="0"/>
+                                            </Grid>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </ListBox.ItemContainerStyle>
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <Border
+                                Padding="1"
+                                BorderThickness="0">
+                                <Border.Background>
+                                    <SolidColorBrush
+                                        Color="{Binding Path=DataContext.Main.BandThemeBaseColor, ElementName=TilesList, TargetNullValue={StaticResource BandColor}}" />
+                                </Border.Background>
+                                <StackPanel
+                                    Orientation="Horizontal">
+                                    <Border
+                                        BorderBrush="Black"
+                                        BorderThickness="0,0,1,0"
+                                        Margin="0,0,10,0">
+                                        <Image
+                                            Source="{Binding TileIcon}"
+                                            Stretch="None"
+                                            HorizontalAlignment="Left"
+                                            VerticalAlignment="Center"/>
+                                    </Border>
+                                    <TextBlock
+                                        Style="{StaticResource TextBlockStyle}"
+                                        Text="{Binding Name}"
+                                        VerticalAlignment="Center"
+                                        HorizontalAlignment="Left" />
+                                </StackPanel>
+                            </Border>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+                <Button
+                    Content="Remove"
+                    IsEnabled="{Binding Self, Converter={StaticResource RemoveTileCommandEnabledConverter}}"
+                    Click="RemoveTile_Click"/>
+                <StackPanel
+                    Orientation="Horizontal">
+                    <Button
+                        Content="Message"
+                        Margin="0,0,5,0"
+                        IsEnabled="{Binding Self, Converter={StaticResource MessageDialogCommandEnabledConverter}}"
+                        Click="SendMessage_Click"/>
+                    <Button
+                        Content="Dialog"
+                        Margin="0,0,5,0"
+                        IsEnabled="{Binding Self, Converter={StaticResource MessageDialogCommandEnabledConverter}}"
+                        Click="ShowDialog_Click"/>
+                </StackPanel>
+                <CheckBox
+                    Name="WithDialog"
+                    Content="With Dialog"/>
+                <TextBlock
+                    Text="Title" />
+                <TextBox
+                    Text="{Binding MessageTitle, Mode=TwoWay}" />
+                <TextBlock
+                    Text="Message" />
+                <TextBox
+                    Text="{Binding MessageBody, Mode=TwoWay}" />
+            </StackPanel>
+        </StackPanel>
+    </ScrollViewer>
+</Page>

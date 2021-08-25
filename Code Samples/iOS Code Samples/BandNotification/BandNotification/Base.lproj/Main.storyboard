@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Notification View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="NotificationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sWs-A3-8iX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Microsoft Band!!!" translatesAutoresizingMaskIntoConstraints="NO" id="Abu-Pi-geo">
+                                <rect key="frame" x="16" y="107" width="382" height="609"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.0079773027569999995" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tKj-oJ-A4c">
+                                <rect key="frame" x="16" y="28" width="382" height="44"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="aI6-TU-WO3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Send A Message">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapSendMessageButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q9u-oT-JQu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Abu-Pi-geo" secondAttribute="bottom" constant="20" id="Eum-cO-vwK"/>
+                            <constraint firstItem="Abu-Pi-geo" firstAttribute="leading" secondItem="sWs-A3-8iX" secondAttribute="leadingMargin" id="Ww1-91-o3T"/>
+                            <constraint firstItem="tKj-oJ-A4c" firstAttribute="trailing" secondItem="sWs-A3-8iX" secondAttribute="trailingMargin" id="fZH-pf-ydP"/>
+                            <constraint firstItem="tKj-oJ-A4c" firstAttribute="leading" secondItem="sWs-A3-8iX" secondAttribute="leadingMargin" id="gXt-G7-n7V"/>
+                            <constraint firstItem="Abu-Pi-geo" firstAttribute="trailing" secondItem="sWs-A3-8iX" secondAttribute="trailingMargin" id="jan-uY-Ylb"/>
+                            <constraint firstItem="tKj-oJ-A4c" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="nLD-np-gdh"/>
+                            <constraint firstItem="Abu-Pi-geo" firstAttribute="top" secondItem="tKj-oJ-A4c" secondAttribute="bottom" constant="35" id="rkO-7E-bF8"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="sendMessageButton" destination="tKj-oJ-A4c" id="fWd-nK-sYP"/>
+                        <outlet property="txtOutput" destination="Abu-Pi-geo" id="iF5-Ms-V6W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

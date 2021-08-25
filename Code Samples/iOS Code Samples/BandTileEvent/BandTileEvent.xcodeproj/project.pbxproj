@@ -1,0 +1,341 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E5CFE4901AC36CC800109079 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E5CFE48F1AC36CC800109079 /* main.m */; };
+		E5CFE4931AC36CC800109079 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E5CFE4921AC36CC800109079 /* AppDelegate.m */; };
+		E5CFE4961AC36CC800109079 /* TileEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5CFE4951AC36CC800109079 /* TileEventViewController.m */; };
+		E5CFE4991AC36CC800109079 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5CFE4971AC36CC800109079 /* Main.storyboard */; };
+		E5CFE49B1AC36CC800109079 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5CFE49A1AC36CC800109079 /* Images.xcassets */; };
+		E5CFE49E1AC36CC800109079 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5CFE49C1AC36CC800109079 /* LaunchScreen.xib */; };
+		E5CFE4B61AC36D1200109079 /* MicrosoftBandKit_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5CFE4B51AC36D1200109079 /* MicrosoftBandKit_iOS.framework */; };
+		E5CFE4B81AC36D2200109079 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5CFE4B71AC36D2200109079 /* CoreBluetooth.framework */; };
+		E5CFE4C61AC371B900109079 /* D.png in Resources */ = {isa = PBXBuildFile; fileRef = E5CFE4C41AC371B900109079 /* D.png */; };
+		E5CFE4C71AC371B900109079 /* Dd.png in Resources */ = {isa = PBXBuildFile; fileRef = E5CFE4C51AC371B900109079 /* Dd.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E5CFE48A1AC36CC800109079 /* BandTileEvent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BandTileEvent.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5CFE48E1AC36CC800109079 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5CFE48F1AC36CC800109079 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E5CFE4911AC36CC800109079 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E5CFE4921AC36CC800109079 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E5CFE4941AC36CC800109079 /* TileEventViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TileEventViewController.h; sourceTree = "<group>"; };
+		E5CFE4951AC36CC800109079 /* TileEventViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TileEventViewController.m; sourceTree = "<group>"; };
+		E5CFE4981AC36CC800109079 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E5CFE49A1AC36CC800109079 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E5CFE49D1AC36CC800109079 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		E5CFE4B51AC36D1200109079 /* MicrosoftBandKit_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MicrosoftBandKit_iOS.framework; path = ../MicrosoftBandKit_iOS.framework; sourceTree = "<group>"; };
+		E5CFE4B71AC36D2200109079 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		E5CFE4C41AC371B900109079 /* D.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = D.png; sourceTree = "<group>"; };
+		E5CFE4C51AC371B900109079 /* Dd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dd.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E5CFE4871AC36CC800109079 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5CFE4B81AC36D2200109079 /* CoreBluetooth.framework in Frameworks */,
+				E5CFE4B61AC36D1200109079 /* MicrosoftBandKit_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E5CFE4811AC36CC800109079 = {
+			isa = PBXGroup;
+			children = (
+				E5CFE4B41AC36D0200109079 /* Framework */,
+				E5CFE48C1AC36CC800109079 /* BandTileEvent */,
+				E5CFE48B1AC36CC800109079 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E5CFE48B1AC36CC800109079 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E5CFE48A1AC36CC800109079 /* BandTileEvent.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E5CFE48C1AC36CC800109079 /* BandTileEvent */ = {
+			isa = PBXGroup;
+			children = (
+				E5CFE4911AC36CC800109079 /* AppDelegate.h */,
+				E5CFE4921AC36CC800109079 /* AppDelegate.m */,
+				E5CFE4941AC36CC800109079 /* TileEventViewController.h */,
+				E5CFE4951AC36CC800109079 /* TileEventViewController.m */,
+				E5CFE4971AC36CC800109079 /* Main.storyboard */,
+				E5CFE49A1AC36CC800109079 /* Images.xcassets */,
+				E5CFE49C1AC36CC800109079 /* LaunchScreen.xib */,
+				E5CFE4C41AC371B900109079 /* D.png */,
+				E5CFE4C51AC371B900109079 /* Dd.png */,
+				E5CFE48D1AC36CC800109079 /* Supporting Files */,
+			);
+			path = BandTileEvent;
+			sourceTree = "<group>";
+		};
+		E5CFE48D1AC36CC800109079 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E5CFE48E1AC36CC800109079 /* Info.plist */,
+				E5CFE48F1AC36CC800109079 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E5CFE4B41AC36D0200109079 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				E5CFE4B71AC36D2200109079 /* CoreBluetooth.framework */,
+				E5CFE4B51AC36D1200109079 /* MicrosoftBandKit_iOS.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E5CFE4891AC36CC800109079 /* BandTileEvent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E5CFE4AD1AC36CC800109079 /* Build configuration list for PBXNativeTarget "BandTileEvent" */;
+			buildPhases = (
+				E5CFE4861AC36CC800109079 /* Sources */,
+				E5CFE4871AC36CC800109079 /* Frameworks */,
+				E5CFE4881AC36CC800109079 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BandTileEvent;
+			productName = BandTileEvent;
+			productReference = E5CFE48A1AC36CC800109079 /* BandTileEvent.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E5CFE4821AC36CC800109079 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Microsoft;
+				TargetAttributes = {
+					E5CFE4891AC36CC800109079 = {
+						CreatedOnToolsVersion = 6.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = E5CFE4851AC36CC800109079 /* Build configuration list for PBXProject "BandTileEvent" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E5CFE4811AC36CC800109079;
+			productRefGroup = E5CFE48B1AC36CC800109079 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E5CFE4891AC36CC800109079 /* BandTileEvent */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E5CFE4881AC36CC800109079 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5CFE4C61AC371B900109079 /* D.png in Resources */,
+				E5CFE4C71AC371B900109079 /* Dd.png in Resources */,
+				E5CFE4991AC36CC800109079 /* Main.storyboard in Resources */,
+				E5CFE49E1AC36CC800109079 /* LaunchScreen.xib in Resources */,
+				E5CFE49B1AC36CC800109079 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E5CFE4861AC36CC800109079 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5CFE4961AC36CC800109079 /* TileEventViewController.m in Sources */,
+				E5CFE4931AC36CC800109079 /* AppDelegate.m in Sources */,
+				E5CFE4901AC36CC800109079 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E5CFE4971AC36CC800109079 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E5CFE4981AC36CC800109079 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E5CFE49C1AC36CC800109079 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E5CFE49D1AC36CC800109079 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E5CFE4AB1AC36CC800109079 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E5CFE4AC1AC36CC800109079 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E5CFE4AE1AC36CC800109079 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"${SRCROOT}/../",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BandTileEvent/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E5CFE4AF1AC36CC800109079 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"${SRCROOT}/../",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BandTileEvent/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E5CFE4851AC36CC800109079 /* Build configuration list for PBXProject "BandTileEvent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5CFE4AB1AC36CC800109079 /* Debug */,
+				E5CFE4AC1AC36CC800109079 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E5CFE4AD1AC36CC800109079 /* Build configuration list for PBXNativeTarget "BandTileEvent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5CFE4AE1AC36CC800109079 /* Debug */,
+				E5CFE4AF1AC36CC800109079 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E5CFE4821AC36CC800109079 /* Project object */;
+}

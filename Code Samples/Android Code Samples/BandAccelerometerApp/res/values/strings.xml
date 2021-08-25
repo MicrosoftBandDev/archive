@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Band Accelerometer Sample</string>
+    <string name="action_settings">Settings</string>
+    
+    <string name="steps">Steps to use this app: \n
+        1. Pair your band with the phone\n
+        2. Make sure Microsoft Health is installed\n        
+        3. Press the Start button\n
+        4. Data from the accelerometer sensor should be displayed.</string>
+    <string name="start">Start</string>
+</resources>

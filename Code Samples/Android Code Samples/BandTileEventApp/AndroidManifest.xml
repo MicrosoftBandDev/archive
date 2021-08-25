@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.microsoft.band.sdk.sampleapp.tileevent"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="19" />
+    
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="com.microsoft.band.service.access.BIND_BAND_SERVICE" />
+    
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.microsoft.band.sdk.sampleapp.BandTileEventAppActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <!-- Declares a broadcast receiver as one of the application's components. 
+        	 Broadcast receivers enable applications to receive intents related to 
+        	 Tile Events, even when other components of the application are not running. -->
+        <receiver 
+            android:name="com.microsoft.band.sdk.sampleapp.TileEventReceiver"
+            android:label="@string/app_name"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.microsoft.band.action.ACTION_TILE_OPENED"/>
+                <action android:name="com.microsoft.band.action.ACTION_TILE_BUTTON_PRESSED"/>
+                <action android:name="com.microsoft.band.action.ACTION_TILE_CLOSED"/>
+            </intent-filter>
+        </receiver>
+    </application>
+	
+</manifest>
