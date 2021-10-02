@@ -1,0 +1,175 @@
+{
+  "$type": "DesignerContents",
+  "DesignerState": {
+    "$type": "DesignerState",
+    "BandLayout": {
+      "$type": "BandLayout",
+      "Version": {
+        "$type": "Version",
+        "Major": 2,
+        "Build": -1,
+        "Revision": -1
+      },
+      "BandTheme": {
+        "$type": "Theme",
+        "Base": "R: 51, G: 102, B: 204",
+        "HighContrast": "R: 58, G: 120, B: 221",
+        "Highlight": "R: 58, G: 120, B: 221",
+        "Lowlight": "R: 49, G: 101, B: 186",
+        "Muted": "R: 43, G: 90, B: 165",
+        "SecondaryText": "R: 137, G: 151, B: 171"
+      },
+      "TileTheme": {
+        "$type": "Theme",
+        "Base": "R: 51, G: 102, B: 204",
+        "HighContrast": "R: 58, G: 120, B: 221",
+        "Highlight": "R: 58, G: 120, B: 221",
+        "Lowlight": "R: 49, G: 101, B: 186",
+        "Muted": "R: 43, G: 90, B: 165",
+        "SecondaryText": "R: 137, G: 151, B: 171"
+      },
+      "RootPanel": {
+        "$type": "FlowPanel",
+        "Elements": {
+          "$type": "Elements",
+          "$values": [
+            {
+              "$type": "FlowPanel",
+              "Orientation": 1,
+              "Elements": {
+                "$type": "Elements",
+                "$values": [
+                  {
+                    "$type": "TextBlock",
+                    "AutoWidth": true,
+                    "ColorSource": 1,
+                    "Color": "R: 0, G: 121, B: 214",
+                    "Text": "Band Calculator",
+                    "Name": "",
+                    "ElementId": 70,
+                    "Id": "71990747-a9d2-444a-bbf8-92733ae8a2c6",
+                    "Width": 188,
+                    "Height": 30,
+                    "LeftMargin": 10,
+                    "TopMargin": 1
+                  },
+                  {
+                    "$type": "Icon",
+                    "ColorSource": 1,
+                    "Color": "R: 0, G: 121, B: 214",
+                    "Source": "Assets/SampleTileIconSmall.png",
+                    "Name": "",
+                    "ElementId": 66,
+                    "Id": "740eb6aa-3eb0-4593-b2bf-5c09498a0949",
+                    "Width": 32,
+                    "Height": 32,
+                    "LeftMargin": 10,
+                    "TopMargin": 8
+                  }
+                ]
+              },
+              "Name": "",
+              "ElementId": 75,
+              "Id": "46ba9c6c-cadf-44d1-92c0-d8ba91794511",
+              "Width": 240,
+              "Height": 45
+            },
+            {
+              "$type": "FlowPanel",
+              "Orientation": 1,
+              "Elements": {
+                "$type": "Elements",
+                "$values": [
+                  {
+                    "$type": "TextBlock",
+                    "AutoWidth": true,
+                    "Color": "R: 255, G: 255, B: 255",
+                    "Text": "0",
+                    "Name": "CalcResult",
+                    "ElementId": 78,
+                    "Id": "0cbbc431-28ff-4a89-a056-4f9ab2fb3fc9",
+                    "Width": 32,
+                    "Height": 32,
+                    "LeftMargin": 10,
+                    "VerticalAlignment": 2
+                  }
+                ]
+              },
+              "Name": "",
+              "ElementId": 74,
+              "Id": "5af67cf9-f518-4fe9-83a9-1d008b3a4638",
+              "Width": 240,
+              "Height": 35,
+              "VerticalAlignment": 2
+            },
+            {
+              "$type": "FlowPanel",
+              "Orientation": 1,
+              "Elements": {
+                "$type": "Elements",
+                "$values": [
+                  {
+                    "$type": "TextButton",
+                    "PressedColor": "R: 0, G: 121, B: 214",
+                    "Text": "=",
+                    "Name": "",
+                    "ElementId": 20,
+                    "Id": "4bffd80a-e943-488d-b1fd-b5fa8b8bbaf3",
+                    "Width": 85,
+                    "Height": 35,
+                    "LeftMargin": 10,
+                    "TopMargin": 10,
+                    "HorizontalAlignment": 2
+                  },
+                  {
+                    "$type": "TextButton",
+                    "PressedColor": "R: 0, G: 121, B: 214",
+                    "Text": "c",
+                    "Name": "",
+                    "ElementId": 19,
+                    "Id": "56ca6d26-f0dd-4c91-9755-8b45d8ca4372",
+                    "Width": 60,
+                    "Height": 35,
+                    "LeftMargin": 10,
+                    "TopMargin": 10,
+                    "HorizontalAlignment": 2
+                  },
+                  {
+                    "$type": "TextButton",
+                    "PressedColor": "R: 0, G: 121, B: 214",
+                    "Text": "del",
+                    "Name": "",
+                    "ElementId": 27,
+                    "Id": "0e3678dc-52a3-4e76-8808-7030852e420b",
+                    "Width": 60,
+                    "Height": 35,
+                    "LeftMargin": 10,
+                    "TopMargin": 10,
+                    "HorizontalAlignment": 2
+                  }
+                ]
+              },
+              "Name": "",
+              "ElementId": 76,
+              "Id": "cfc0356b-3b4f-4c80-8f54-c241a7e15a31",
+              "Width": 250,
+              "Height": 45
+            }
+          ]
+        },
+        "Name": "",
+        "ElementId": 79,
+        "Id": "866fa28d-4544-45d5-be5c-7614207913d3",
+        "Width": 262,
+        "Height": 128
+      }
+    },
+    "SelectedElements": {
+      "$type": "IdList",
+      "$values": [
+        "0cbbc431-28ff-4a89-a056-4f9ab2fb3fc9"
+      ]
+    }
+  },
+  "ZoomPercent": 100.0
+}

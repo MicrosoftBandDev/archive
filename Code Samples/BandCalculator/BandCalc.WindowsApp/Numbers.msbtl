@@ -1,0 +1,215 @@
+{
+  "$type": "DesignerContents",
+  "DesignerState": {
+    "$type": "DesignerState",
+    "BandLayout": {
+      "$type": "BandLayout",
+      "Version": {
+        "$type": "Version",
+        "Major": 2,
+        "Build": -1,
+        "Revision": -1
+      },
+      "BandTheme": {
+        "$type": "Theme",
+        "Base": "R: 51, G: 102, B: 204",
+        "HighContrast": "R: 58, G: 120, B: 221",
+        "Highlight": "R: 58, G: 120, B: 221",
+        "Lowlight": "R: 49, G: 101, B: 186",
+        "Muted": "R: 43, G: 90, B: 165",
+        "SecondaryText": "R: 137, G: 151, B: 171"
+      },
+      "TileTheme": {
+        "$type": "Theme",
+        "Base": "R: 51, G: 102, B: 204",
+        "HighContrast": "R: 58, G: 120, B: 221",
+        "Highlight": "R: 58, G: 120, B: 221",
+        "Lowlight": "R: 49, G: 101, B: 186",
+        "Muted": "R: 43, G: 90, B: 165",
+        "SecondaryText": "R: 137, G: 151, B: 171"
+      },
+      "RootPanel": {
+        "$type": "FlowPanel",
+        "Elements": {
+          "$type": "Elements",
+          "$values": [
+            {
+              "$type": "FlowPanel",
+              "Orientation": 1,
+              "Elements": {
+                "$type": "Elements",
+                "$values": [
+                  {
+                    "$type": "TextButton",
+                    "PressedColor": "R: 0, G: 121, B: 214",
+                    "Text": "1",
+                    "Name": "",
+                    "ElementId": 1,
+                    "Id": "10bd3c95-6731-4737-bd44-92021651f01b",
+                    "Width": 40,
+                    "Height": 35,
+                    "LeftMargin": 30,
+                    "HorizontalAlignment": 2
+                  },
+                  {
+                    "$type": "TextButton",
+                    "PressedColor": "R: 0, G: 121, B: 214",
+                    "Text": "2",
+                    "Name": "",
+                    "ElementId": 2,
+                    "Id": "6f74b1bf-4888-4652-a966-a0904e4fe945",
+                    "Width": 40,
+                    "Height": 35,
+                    "LeftMargin": 10,
+                    "HorizontalAlignment": 2
+                  },
+                  {
+                    "$type": "TextButton",
+                    "PressedColor": "R: 0, G: 121, B: 214",
+                    "Text": "3",
+                    "Name": "",
+                    "ElementId": 3,
+                    "Id": "2aa36045-a445-401a-be9e-b3bc5ef805d9",
+                    "Width": 40,
+                    "Height": 35,
+                    "LeftMargin": 10,
+                    "HorizontalAlignment": 2
+                  },
+                  {
+                    "$type": "TextButton",
+                    "PressedColor": "R: 0, G: 121, B: 214",
+                    "Text": "0",
+                    "Name": "",
+                    "ElementId": 10,
+                    "Id": "1feefc80-c6d8-4640-b18f-46e1d8e087a8",
+                    "Width": 40,
+                    "Height": 35,
+                    "LeftMargin": 15,
+                    "HorizontalAlignment": 2
+                  }
+                ]
+              },
+              "Name": "",
+              "ElementId": 89,
+              "Id": "46ba9c6c-cadf-44d1-92c0-d8ba91794511",
+              "Width": 240,
+              "Height": 45
+            },
+            {
+              "$type": "FlowPanel",
+              "Orientation": 1,
+              "Elements": {
+                "$type": "Elements",
+                "$values": [
+                  {
+                    "$type": "TextButton",
+                    "PressedColor": "R: 0, G: 121, B: 214",
+                    "Text": "4",
+                    "Name": "",
+                    "ElementId": 4,
+                    "Id": "2c78daa8-75ae-42a5-b3c0-fbf27ea6a725",
+                    "Width": 40,
+                    "Height": 35,
+                    "LeftMargin": 30,
+                    "HorizontalAlignment": 2
+                  },
+                  {
+                    "$type": "TextButton",
+                    "PressedColor": "R: 0, G: 121, B: 214",
+                    "Text": "5",
+                    "Name": "",
+                    "ElementId": 5,
+                    "Id": "d653565e-605c-4a3d-94f2-bf09b49e50a6",
+                    "Width": 40,
+                    "Height": 35,
+                    "LeftMargin": 10,
+                    "HorizontalAlignment": 2
+                  },
+                  {
+                    "$type": "TextButton",
+                    "PressedColor": "R: 0, G: 121, B: 214",
+                    "Text": "6",
+                    "Name": "",
+                    "ElementId": 6,
+                    "Id": "1eb6cf71-da67-41c9-95a3-da9fc42896bf",
+                    "Width": 40,
+                    "Height": 35,
+                    "LeftMargin": 10,
+                    "HorizontalAlignment": 2
+                  }
+                ]
+              },
+              "Name": "",
+              "ElementId": 88,
+              "Id": "5af67cf9-f518-4fe9-83a9-1d008b3a4638",
+              "Width": 240,
+              "Height": 45
+            },
+            {
+              "$type": "FlowPanel",
+              "Orientation": 1,
+              "Elements": {
+                "$type": "Elements",
+                "$values": [
+                  {
+                    "$type": "TextButton",
+                    "PressedColor": "R: 0, G: 121, B: 214",
+                    "Text": "7",
+                    "Name": "",
+                    "ElementId": 7,
+                    "Id": "29208112-9105-46cf-aeb9-2b8f48eddea9",
+                    "Width": 40,
+                    "Height": 35,
+                    "LeftMargin": 30,
+                    "HorizontalAlignment": 2
+                  },
+                  {
+                    "$type": "TextButton",
+                    "PressedColor": "R: 0, G: 121, B: 214",
+                    "Text": "8",
+                    "Name": "",
+                    "ElementId": 8,
+                    "Id": "83ebad9a-521d-4c36-8fb3-d8d601c4c3fd",
+                    "Width": 40,
+                    "Height": 35,
+                    "LeftMargin": 10,
+                    "HorizontalAlignment": 2
+                  },
+                  {
+                    "$type": "TextButton",
+                    "PressedColor": "R: 0, G: 121, B: 214",
+                    "Text": "9",
+                    "Name": "",
+                    "ElementId": 9,
+                    "Id": "cccaf8f9-240d-4576-bbf6-6f9d3dde5370",
+                    "Width": 40,
+                    "Height": 35,
+                    "LeftMargin": 10,
+                    "HorizontalAlignment": 2
+                  }
+                ]
+              },
+              "Name": "",
+              "ElementId": 87,
+              "Id": "cfc0356b-3b4f-4c80-8f54-c241a7e15a31",
+              "Width": 240,
+              "Height": 45
+            }
+          ]
+        },
+        "Name": "",
+        "ElementId": 86,
+        "Id": "866fa28d-4544-45d5-be5c-7614207913d3",
+        "Width": 248,
+        "Height": 128
+      }
+    },
+    "SelectedElements": {
+      "$type": "IdList",
+      "$values": [
+        "29208112-9105-46cf-aeb9-2b8f48eddea9"
+      ]
+    }
+  },
+  "ZoomPercent": 100.0
+}

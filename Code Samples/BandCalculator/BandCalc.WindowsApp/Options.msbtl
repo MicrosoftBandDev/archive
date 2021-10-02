@@ -1,0 +1,135 @@
+{
+  "$type": "DesignerContents",
+  "DesignerState": {
+    "$type": "DesignerState",
+    "BandLayout": {
+      "$type": "BandLayout",
+      "Version": {
+        "$type": "Version",
+        "Major": 2,
+        "Build": -1,
+        "Revision": -1
+      },
+      "BandTheme": {
+        "$type": "Theme",
+        "Base": "R: 51, G: 102, B: 204",
+        "HighContrast": "R: 58, G: 120, B: 221",
+        "Highlight": "R: 58, G: 120, B: 221",
+        "Lowlight": "R: 49, G: 101, B: 186",
+        "Muted": "R: 43, G: 90, B: 165",
+        "SecondaryText": "R: 137, G: 151, B: 171"
+      },
+      "TileTheme": {
+        "$type": "Theme",
+        "Base": "R: 51, G: 102, B: 204",
+        "HighContrast": "R: 58, G: 120, B: 221",
+        "Highlight": "R: 58, G: 120, B: 221",
+        "Lowlight": "R: 49, G: 101, B: 186",
+        "Muted": "R: 43, G: 90, B: 165",
+        "SecondaryText": "R: 137, G: 151, B: 171"
+      },
+      "RootPanel": {
+        "$type": "FlowPanel",
+        "Elements": {
+          "$type": "Elements",
+          "$values": [
+            {
+              "$type": "FlowPanel",
+              "Orientation": 1,
+              "Elements": {
+                "$type": "Elements",
+                "$values": [
+                  {
+                    "$type": "TextBlock",
+                    "AutoWidth": true,
+                    "ColorSource": 1,
+                    "Color": "R: 0, G: 121, B: 214",
+                    "Text": "Settings",
+                    "Name": "",
+                    "ElementId": 53,
+                    "Id": "71990747-a9d2-444a-bbf8-92733ae8a2c6",
+                    "Width": 32,
+                    "Height": 40,
+                    "LeftMargin": 10,
+                    "TopMargin": 1
+                  }
+                ]
+              },
+              "Name": "",
+              "ElementId": 51,
+              "Id": "46ba9c6c-cadf-44d1-92c0-d8ba91794511",
+              "Width": 240,
+              "Height": 45
+            },
+            {
+              "$type": "FlowPanel",
+              "Orientation": 1,
+              "Elements": {
+                "$type": "Elements",
+                "$values": [
+                  {
+                    "$type": "TextBlock",
+                    "AutoWidth": true,
+                    "Color": "R: 255, G: 255, B: 255",
+                    "Text": "Haptic feedback:",
+                    "Name": "",
+                    "ElementId": 32,
+                    "Id": "0cbbc431-28ff-4a89-a056-4f9ab2fb3fc9",
+                    "Width": 32,
+                    "Height": 32,
+                    "LeftMargin": 10,
+                    "TopMargin": 10,
+                    "VerticalAlignment": 2
+                  }
+                ]
+              },
+              "Name": "",
+              "ElementId": 97,
+              "Id": "5af67cf9-f518-4fe9-83a9-1d008b3a4638",
+              "Width": 240,
+              "Height": 45
+            },
+            {
+              "$type": "FlowPanel",
+              "Orientation": 1,
+              "Elements": {
+                "$type": "Elements",
+                "$values": [
+                  {
+                    "$type": "TextButton",
+                    "PressedColor": "R: 0, G: 121, B: 214",
+                    "Text": "switch on/off",
+                    "Name": "",
+                    "ElementId": 33,
+                    "Id": "4bffd80a-e943-488d-b1fd-b5fa8b8bbaf3",
+                    "Width": 240,
+                    "Height": 35,
+                    "LeftMargin": 10,
+                    "HorizontalAlignment": 2
+                  }
+                ]
+              },
+              "Name": "",
+              "ElementId": 94,
+              "Id": "cfc0356b-3b4f-4c80-8f54-c241a7e15a31",
+              "Width": 250,
+              "Height": 45
+            }
+          ]
+        },
+        "Name": "",
+        "ElementId": 96,
+        "Id": "866fa28d-4544-45d5-be5c-7614207913d3",
+        "Width": 262,
+        "Height": 128
+      }
+    },
+    "SelectedElements": {
+      "$type": "IdList",
+      "$values": [
+        "4bffd80a-e943-488d-b1fd-b5fa8b8bbaf3"
+      ]
+    }
+  },
+  "ZoomPercent": 100.0
+}

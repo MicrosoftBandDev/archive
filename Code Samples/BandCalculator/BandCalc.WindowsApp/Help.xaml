@@ -1,0 +1,35 @@
+﻿<Page
+    x:Class="BandCalc.WindowsApp.Help"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BandCalc.WindowsApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Background="#0078d7">
+
+    <Grid Background="#0078d7">
+        <ScrollViewer>
+            <StackPanel Margin="0,0,0,0" HorizontalAlignment="Center">
+                <StackPanel Margin="0,0,0,0" HorizontalAlignment="Center" Orientation="Horizontal" VerticalAlignment="Center" >
+                    <Image Source="Assets/Logo.png" Margin="-15,0,-15,0" Height="65"/>
+                    <TextBlock TextWrapping="NoWrap" Margin="20,0,0,0" Text="Band Calculator" FontSize="38" Foreground="White" VerticalAlignment="Center"/>
+                </StackPanel>
+                <StackPanel Margin="40,20,40,20" HorizontalAlignment="Stretch" Orientation="Vertical">
+                    <TextBlock Text="Do you need help?" Margin="0,0,0,5" FontSize="18" TextAlignment="Center" Foreground="#E5FFFFFF" FontWeight="SemiBold" HorizontalAlignment="Stretch"/>
+                    <TextBlock TextWrapping="WrapWholeWords" Text="Many problems can be solved quickly. See below:" FontSize="16" TextAlignment="Center" Foreground="White" FontWeight="Light"/>
+
+                    <TextBlock Text="Do you get an error message?" Margin="0,20,0,5" FontSize="18" TextAlignment="Center" TextWrapping="Wrap" Foreground="#E5FFFFFF" FontWeight="SemiBold" HorizontalAlignment="Stretch"/>
+                    <TextBlock TextWrapping="WrapWholeWords" Text="Well, this should not happen. Maybe Microsoft has updated the Band and now it's incompatible with third-party apps. Please give me/Microsoft time to fix it." FontSize="16" TextAlignment="Center" Foreground="White" FontWeight="Light"/>
+
+                    <TextBlock Text="Tile incomplete? Does not work properly?" Margin="0,20,0,5" FontSize="18" TextAlignment="Center" TextWrapping="Wrap" Foreground="#E5FFFFFF" FontWeight="SemiBold" HorizontalAlignment="Stretch"/>
+                    <TextBlock TextWrapping="WrapWholeWords" Text="Just add the tile again and wait until the Band and the app confirm with 'Ready'." FontSize="16" TextAlignment="Center" Foreground="White" FontWeight="Light"/>
+
+                    <TextBlock Text="Tile does not respond?" Margin="0,20,0,5" FontSize="18" TextAlignment="Center" TextWrapping="Wrap" Foreground="#E5FFFFFF" FontWeight="SemiBold" HorizontalAlignment="Stretch"/>
+                    <TextBlock TextWrapping="WrapWholeWords" Text="Check the Windows Store for a Microsoft Health update. Reboot your phone. Try to add the Band Calculator tile again. Still problems? Reinstall Microsoft Health and complete the setup. Manage your tiles and save the changes! Then try to add the Band Calculator tile again." FontSize="16" TextAlignment="Center" Foreground="White" FontWeight="Light"/>
+                    
+                    <Button x:Name="MailSupportButton" Content="Mail-Support" Margin="0,30,0,0" HorizontalAlignment="Stretch" Click="MailSupportButton_Click" Foreground="White" Background="#33FFFFFF"></Button>
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>
