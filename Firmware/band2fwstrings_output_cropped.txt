@@ -1,0 +1,220 @@
+file name: envoy-2.0.5202.0.bin
+
+0003c733: Authentication Service
+00042f7f: Command Service
+00043087: Command Service
+00045f4e: =Height
+00045f57: TpCount
+00045f5f: PeakCount
+00045f6b: ZcSamples
+00045f77: UpSlopeCount
+00045f87: DownSlopeCount
+00045f97: FlatCount
+00045fa3: MaxAbsGrad
+00045faf: HandStill
+0004f017: Invalid Operation
+0004f02b: Divide By Zero
+0004f03b: Overflow
+0004f047: Underflow
+0004f053: Inexact Result
+0004f063: SIGFPE: Arithmetic exception: 
+0005d2eb: BT Information
+0005d303: Status: %sonnected
+0005d317: Pair: %s
+0005d32a: PNone
+0005d333: None (Error)
+0005d73a:  Sat %u: %u - Sat %u: %u
+0005d753: Sat %u: %u
+0005d75f: Ephemeris (Exists)
+0005d773: Ephemeris
+0005d77f: Ephemeris (None)
+0005d797: %s UTC to
+0005d7a3: %s UTC
+0005d7ab: C/N Data (AVG: %u)
+0005d7bf: C/N Data 2 (AVG: %u)
+0005df6f: Chunks used: %u
+00091183: AppG9HAxA
+0009118f: AppG6HAxA
+0009119b: AppG3I
+000a69af: Push Service
+000ad593: Microsoft Corporation
+000ba81a: @Sex: Female
+000ba827: Sex: Male
+000ba833: Height: %u mm
+000ba843: Weight: %u g
+000ba853: Age: %hhu
+000ba85f: PSOC Version: %u.%03u
+000ba877: DevicePCB: %u
+000ba887: DeviceID: %s
+000ba8ab: Serial: %s
+000ba8b7: BDADDR: %s
+000ba8c3: Build=%u PCB: %u 
+000ba8d7: Debug: %u
+000ba8e3: Version=%u.%u Qfe=%u
+000ba907: Uptime since full charge
+000ba923: Current: %02d:%02d:%02d
+000ba93b: Best: %02d:%02d:00
+000ba94f: Fully recharge unit and
+000ba967: disconnect USB to start
+000bad83: Barometer
+000bad8f: Air Pressure: %1.3f hPa
+000badad: *BTemperature: %1.2f 
+000badc7: Unknown
+000badcf: Macronix
+000baddb: Micron
+000bade3: Flash Memory
+000badf3: JEDEC ID: %x-%x-%x
+000bae07: Manufacturer: %s
+000bae1b: Size: %u MB
+000bae27: ALS (Ambient Light)
+000bae3b: LuxValue: %u
+000bae4f: UV Level: %2.1f - Peak: %2.1f
+000bae6f: UV Intensity Level: %u
+000bae87: UV Photodiode (nA): %u
+000bae9f: Motion
+000baea7: Ax: %d, Ay: %d, Az: %d
+000baec2: 9Accel: %1.3f g
+000baed3: Gx: %d, Gy: %d, Gz: %d
+000baefb: CS count: %u
+000baf13: GPS (Location)
+000baf23: Lat: %d.%07d
+000baf33: Long: %d.%07d
+000baf43: Time Error
+000baf57: RTCErr:%s%us
+000baf67: GPS (Raw Nav)
+000baf77: GPS: Enabled, Lock: %d
+000baf8f: GPS: Disabled, Lock: %d
+000bafb5: #<Alt: %d ft, Spd: %u.%u mph
+000bb3c7: EHPE: %u ft, EVPE: %u ft
+000bb3e3: Power Information
+000bb3f7: Uptime: %02d:%02d:%02d
+000bb40f: BT Active: %02d:%02d:%02d (%d%%)
+000bb433: Distance
+000bb446: ?TotalDistance: %u ft
+000bb45f: PedometerDistance: %u ft
+000bb47b: GPSDistance: %u ft
+000bb48f: GasGauge 2
+000bb49b: Current: %dmA
+000bb4ab: Avg: %dmA
+000bb4b7: Celsius: %d
+000bb4c3: C Batt Fail: %u
+000bb4d3: GasGauge 1
+000bb4df: Charge: %u%% Charging: %u
+000bb4fb: Alerts: 0x%08X
+000bb50b: ChargeState: SUSPEND
+000bb523: ChargeState: OFF
+000bb537: ChargeState: LOW
+000bb54b: ChargeState: HIGH
+000bb55f: Battery
+000bb567: Filtered mV: %u
+000bb577: Alert: 0x%.4X USBVbus: %u
+000bb593: CrtAlrt: %d, TermAlrt: %d
+000bb5af: Skin Temperature
+000bb5c3: Temperature: %u.%01u
+000bb5e3: Ambient Temperature
+000d1253: SIGRTMEM: Out of heap memory
+000d1273: : Heap memory corrupted
+000e1d4f: end-of-stream
+000e1d5f: io error
+000e1d6b: varint overflow
+000e1d7b: invalid wire_type
+000e1d8f: parent stream too short
+000e1dab: array overflow
+000e1dbb: invalid field type
+000e1dcf: no malloc support
+000e22af: missing required field
+000e22c7: invalid data_size
+000e22db: size too large
+000e22eb: bytes overflow
+000e22fb: string overflow
+000e230b: invalid field descriptor
+000e2327: callback failed
+000e2337: invalid wire_type
+000e4893: nicefakename
+001195ab: SIGPVFN: Pure virtual fn called
+0011bfb7: WINUSB
+0011c297: BT_BeginDisableKAPC
+0011c2ab: BT_Startup
+0011c2b6: BT_Cleanup
+0011c2c1: BT_EnterPairingMode
+0011c2d5: BT_EnterNormalMode
+0011c2e8: BT_EnterInvisibleMode
+0011c2fe: BT_SendAuthenticationResponse
+0011c31c: BT_SendIOCapabilitiesKAPC
+0011c336: BT_EnterSniffModeExecuteCallbackKAPC
+0011c35b: EnterSniffMode
+0011c36a: BT_ExitSniffModeExecuteCallbackKAPC
+0011c38e: BT_ExitSniffMode
+0011c39f: BT_SetLocalDeviceName
+0011d869: PeripheralManager
+0011dda6: ?BLE_BeginDisableKAPC
+0011ddbc: BLE_Startup
+0011ddc8: BLE_Cleanup
+0011ddd4: BLE_IncreaseConnectionParameters
+0011ddf5: BLE_DecreaseConnectionParameters
+0011de16: BLE_EnterPairingMode
+0011de2b: BLE_EnterNormalMode
+0011de3f: BLE_EnterInvisibleMode
+0011de56: BLE_StartAdvertise
+0011de69: BLE_StopAdvertise
+0011de7b: BLE_SetLocalDeviceName
+0011debb: BLE_RegisterTestService
+0011ded3: BLE_RequestSecurity
+0011dee7: BLE_Connect
+0011deff: BLE_CancelConnect
+0011dfcb: CommandService_ProcessPacket
+0011dfe8: DID_SendRequest
+0011e003: BTPS_UnlockStackKAPC
+0011e018: BTPS_SchedulerKAPC
+0011e03b: PushService_ConnectKAPC
+0011e063: BT_StartRestartKAPC
+0011e077: BT_HCIVerifyKAPC
+0011e088: BT_HCIReadPageScanTypeBlockingCall
+0011e3bb: BT_Test_EnableTestMode
+0011e3d2: BT_Test_EnterSniffMode
+0011e3e9: BT_Test_Reset
+0011e3f7: BT_Test_IsPresent
+0011e409: BT_Test_ExitSniffMode
+0011e41f: BT_TestHelper
+0011e42d: BT_Test_ReceiveTest
+0011e441: BT_Test_QueryRemoteDeviceServices
+0011e463: BT_Test_ReadRSSI
+0011e474: BT_SetRFTestActive
+0011e487: SPPSupport_SendData
+0011e49b: SPPSupport_CloseConnection
+0011f3a3: HeartRate_UpdateAMinusStats
+0011f4c3: HeartRate_SelectMotionDirection
+0011f4ef: HeartRate_ComputeHrStatsByPeriods
+0011fb5b: SensorService_SendUpdate
+00120ca7: HeartRate_ChangeActiveModeHighLevel
+00120ccb: HeartRate_UpdateCurrentTransitionMode
+00120cf1: HeartRate_UpdateSpikeStatsBySecs
+00120d12: HeartRate_ComputeSpikeStatsBySecs
+00120d34: HeartRate_PurgeHRBuffer
+00120d4c: HeartRate_ZcDetect
+00120d5f: HeartRate_StoreSample
+00120d75: HeartRate_EstimateWithinWindow
+00120d94: HeartRate_CombFilterFindRateIndex
+00120db6: HeartRate_HarmonicsAnalysis
+00120dd2: HeartRate_CombFilterConstruct
+00120df0: HeartRate_Comb1HR
+00120e02: HeartRate_Comb2HR
+00120e14: HeartRate_SyncHr
+00120e25: HeartRate_RecentPeakMagnLabeling
+00120e46: HeartRate_UpdateHrHist
+00120e5d: HeartRate_GetNotSuppressedPeakBpms
+00120e80: HeartRate_AddIntoSuppressionFilterArray
+00120ea8: HeartRate_MotionSubtraction
+00120eed: pBHeartRate_AddPpgSignalIntoBuffer
+00120f10: HeartRate_CopyAndScaleData
+00120f2b: HeartRate_IsHandholdStill
+00120f47: PeterPistachio
+00120f67: A fake subject
+00120f87: A fake body
+00121d6b: HeartRate_SignalQualityComb1
+00121d88: HeartRate_SignalQualityComb2
+00121da5: HeartRate_SignalQualityAmpl
+0013a283: Go to your phone to read the full email.
+0013a2af: This message has no content.
+0013b3b3:  ENVOY BAND
+0013b68f: =L2CAP Test Data

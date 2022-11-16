@@ -1,0 +1,206 @@
+file name: FirmwareUpdate.bin
+
+0001d88c:  nicefakename
+0001ec6d: Microsoft Corporation
+0003f938:  Microsoft
+0003f945: Remote Control
+0003fd55: Cargo Service
+0003fe88:  Cargo Service
+00040691: Push Service
+00043258:  LE Long Term Key
+000577f9: end-of-stream
+00057809: io error
+00057815: varint overflow
+00057825: invalid wire_type
+00057839: parent stream too short
+00057855: array overflow
+00057865: invalid field type
+00057879: no malloc support
+00057c63: +hqh:FhF
+00057ca7: KFBF!F(F
+00057d59: missing required field
+00057d71: invalid data_size
+00057d85: size too large
+00057d95: bytes overflow
+00057da5: string overflow
+00057db5: invalid field descriptor
+00057dd1: callback failed
+00057de1: invalid wire_type
+0006c324:  HandsFree Port %u
+0006c339: CALLSETUP
+0006c345: CALL_SETUP
+00082bf1: BT Information
+00082c09: Status: %sonnected
+00082c1d: Pair: %s
+00082c8d: None (Error)
+000831e7: 7OL Y"<a g
+000832c8:  Sat %u: %u - Sat %u: %u
+000832e1: Sat %u: %u
+000832ed: Ephemeris (Exists)
+00083301: Ephemeris
+0008330d: Ephemeris (None)
+00083324:  %s UTC to
+00083339: C/N Data (AVG: %u)
+0008334d: C/N Data 2 (AVG: %u)
+00083741: Chunks used: %u
+00083751: Total: %u
+0008375d: %2u%% (Enabled)
+0008376d: %2u%% (Disabled)
+000a6660: @Sex: Female
+000a666d: Sex: Male
+000a6679: Height: %u mm
+000a6689: Weight: %u g
+000a6699: Age: %hhu
+000a66a5: PSOC Version: %u.%03u
+000a66bd: DevicePCB: %u
+000a66cd: DeviceID: %s
+000a66f1: Serial: %s
+000a66fd: BDADDR: %s
+000a6709: Build=%u PCB: %u 
+000a671d: Debug: %u
+000a6729: Version=%u.%u Qfe=%u
+000a674d: Unknown
+000a6755: Macronix
+000a6769: Flash Memory
+000a6779: JEDEC ID: %x-%x-%x
+000a678d: Manufacturer: %s
+000a67a1: Size: %u MB
+000a67ad: ALS (Ambient Light)
+000a67c1: CH0Value: %u
+000a67d1: CH1Value: %u
+000a67e1: LuxValue: %u
+000a6bf1: UV Level: %u.%u - Peak: %u.%u
+000a6c11: UV Intensity Level: %u
+000a6c29: UV Photodiode (nA): %u
+000a6c65: kOhm: %u
+000a6c71: CS count: %u
+000a6c89: GPS (Location)
+000a6c99: Lat: %d.%07d
+000a6ca9: Long: %d.%07d
+000a6cb9: Time Error
+000a6ccd: RTCErr:%s%us
+000a6cdd: GPS (Raw Nav)
+000a6ced: GPS: Enabled, Lock: %d
+000a6d05: GPS: Disabled, Lock: %d
+000a6d2b: #<Alt: %d ft, Spd: %u.%u mph
+000a6d49: EHPE: %u ft, EVPE: %u ft
+000a6d65: Power Information
+000a6d79: Uptime: %02d:%02d:%02d
+000a6d91: BT Active: %02d:%02d:%02d (%d%%)
+000a6db5: Distance
+000a6dc8: ?TotalDistance: %u ft
+000a6de1: PedometerDistance: %u ft
+000a6dfd: GPSDistance: %u ft
+000a6fa1: "&*.27<AFKPUZ
+000a7081: Battery
+000a7089: Filtered mV: %u
+000a7099: Percent: %u%%
+000a70a9: CrtAlrt: %d, TermAlrt: %d
+000a70c5: Raw Battery
+000a70f5: LowAlrt: %d, HighAlrt: %d
+000a7111: Skin Temperature
+000a7125: Temperature: %u.%01u
+000a7145: Ambient Temperature
+000a7159: Temperature: %d.%01d
+000b0ced: SIGPVFN: Pure virtual fn called
+000b1005: SIGRTMEM: Out of heap memory
+000b1025: : Heap memory corrupted
+000b2e45: SERVICE
+000b2e55: CALL_SETUP
+000b2e61: CALLSETUP
+000b2e6d: CALLHELD
+000b2e89: BATTCHG
+000d07c5: BT_Disable
+000d07d0: BT_Startup
+000d07db: BT_Cleanup
+000d07e6: StartRestartKAPC
+000d07f7: DisconnectKAPC
+000d0806: BT_EnterPairingMode
+000d081a: BT_EnterNormalMode
+000d082d: BT_EnterInvisibleMode
+000d0843: BT_SendAuthenticationResponse
+000d0861: EnterSniffMode
+000d0870: ExitSniffMode
+000d087e: BT_SetLocalDeviceName
+000d0895: PeterPistachio
+000d08b5: A fake subject
+000d08d5: A fake body
+000d08f3: BTLE_Disable
+000d0900: BTLE_Startup
+000d090d: BTLE_Cleanup
+000d091a: IncreaseConnectionParameters
+000d0937: DecreaseConnectionParameters
+000d0954: BTLE_Disconnect
+000d0964: BTLE_EnterPairingMode
+000d097a: BTLE_EnterNormalMode
+000d098f: BTLE_EnterInvisibleMode
+000d09a7: BTLE_StartAdvertise
+000d09bb: BTLE_StopAdvertise
+000d09ce: BTLE_SetLocalDeviceName
+000d0f80: ?BT_EnterSleep
+000d0f8f: BT_Reset
+000d0f98: HCIExitSleepKAPC
+000d0fe1: CargoService_ProcessPacket
+000d101c: PushService_ConnectKAPC
+000d1034: CargoSPP_SendDataGeneric
+000d104d: CargoSPP_CloseConnectionGeneric
+000d137d: BT_Test_EnableTestMode
+000d1394: BT_Test_EnterSniffMode
+000d13ab: BT_Test_ExitSniffMode
+000d13c1: BT_TestHelper
+000d13cf: BT_Test_ReceiveTest
+000d13e3: BT_Test_QueryRemoteDeviceServices
+000d1405: BTPSKRNL_KAPC_WrapperFunction
+000d1423: HCI_VerifyKAPC
+000d1432: BT_RF_Test_Active
+000d1444: SendRequest
+000d1450: BT_ChangeBaudRate
+000d1462: HFP_Startup
+000d146e: HFP_Cleanup
+000d147a: HFPConnectKAPC
+000d1489: SensorService_SendUpdateKAPC
+000d14d1: BTLE_RegisterTestService
+000d14ea: BTLE_RequestSecurity
+000d14ff: BTLE_Connect
+000d1519: BTLE_CancelConnect
+000d1951: U_dddKKPZdPPUZdddinne
+000d1c91: HeartRate_SelectMotionDirection
+000d1cbd: HeartRate_SuppressionFilter
+000d1cd9: HeartRate_MotionSubtraction
+000d1cf5: HeartRate_ComputeHrStatsByPeriods
+000d1d17: BTCallbackKAPC
+000d2759: HeartRate_ChangeActiveModeHighLevel
+000d277d: HeartRate_GetMeanActiveLevelInternal
+000d27a2: HeartRate_UpdateCurrentTransitionMode
+000d27c8: HeartRate_AddNewAltitudeData
+000d27e5: HeartRate_PurgeHRBuffer
+000d27fd: HeartRate_ZcDetect
+000d2810: HeartRate_StoreSample
+000d2826: HeartRate_EstimateWithinWindow
+000d2845: HeartRate_CombFilterFindRateIndex
+000d2867: HeartRate_HarmonicsAnalysis
+000d2883: HeartRate_CombFilterConstruct
+000d28a1: HeartRate_Comb1HR
+000d28b3: HeartRate_Comb2HR
+000d28c5: HeartRate_SyncHr
+000d28ff: pBHeartRate_AddPpgSignalIntoBuffer
+000d2922: HeartRate_CopyAndScaleData
+000d293d: HeartRate_IsHandholdStill
+000d36e5: HeartRate_SignalQualityComb1
+000d3702: HeartRate_SignalQualityComb2
+000d371f: HeartRate_SignalQualityAmpl
+000e5531: Go to your phone to read the full email.
+000e555d: This message has no content.
+000e55e4: BLACKLISTED
+000e55f0: DELAYED
+000e5641: NO CARRIER
+000e5652: NO ANSWER
+000e5662: +CME ERROR
+000e566d: +CMS ERROR
+000e6e21: PB TitleJ
+000e6e2b: Custom Button Text:
+00138cfc: %5lu SVD:processNAVSubframe:Inval:sv%2d ch:%d
+00138e3b: G#!Invalid setOutputControl parameter!
+00138fa3: `SIF:EE header stored to storage type:0x%x
+001390a8: GSD4e_4.1.2-P1_RPATCH.03-MSFT-PATCH1-MSFT:1 04/01/2013 091
+00139170: %5lu SVD:processNAVSubframe:sv%2d iode:%d iSM:%d iColl:%d sfS:%x
